@@ -2,7 +2,7 @@ import ObjectMapper
 import PayseraCommonSDK
 import Foundation
 
-public final class PSPackage: Mappable {
+public final class PSParcel: Mappable {
     
     public enum Status: String {
         case pending

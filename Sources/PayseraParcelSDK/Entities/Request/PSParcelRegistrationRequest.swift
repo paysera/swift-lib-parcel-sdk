@@ -1,6 +1,6 @@
 import ObjectMapper
 
-public final class PSRegistration: Mappable {
+public final class PSParcelRegistrationRequest: Mappable {
     
     public var name: String!
     public var phoneNumber: String!

@@ -1,6 +1,6 @@
 import ObjectMapper
 
-public final class PSCountry: Mappable {
+public final class PSParcelCountry: Mappable {
     
     public var code: String!
     

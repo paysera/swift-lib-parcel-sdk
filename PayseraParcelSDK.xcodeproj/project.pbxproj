@@ -21,15 +21,20 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		746D5ADF2626ACE200E3BD48 /* PSCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5ADE2626ACE200E3BD48 /* PSCountry.swift */; };
+		746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */; };
 		746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */; };
 		746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */; };
-		746D5B392626AEE400E3BD48 /* PSPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B382626AEE400E3BD48 /* PSPackage.swift */; };
+		746D5B392626AEE400E3BD48 /* PSParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B382626AEE400E3BD48 /* PSParcel.swift */; };
 		746D5B742626B0B500E3BD48 /* PSPackagePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */; };
-		746D5B9C2626B43A00E3BD48 /* PSRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B9B2626B43A00E3BD48 /* PSRegistration.swift */; };
+		746D5B9C2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */; };
 		746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */; };
 		746D5BCA2626B52E00E3BD48 /* PSSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BC92626B52E00E3BD48 /* PSSize.swift */; };
 		746D5BDA2626B5A600E3BD48 /* PSParcelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */; };
+		746D5C2B2626BAA000E3BD48 /* ParcelAPIRquestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C2A2626BAA000E3BD48 /* ParcelAPIRquestRouter.swift */; };
+		746D5C4A2626BBEA00E3BD48 /* PSUserUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */; };
+		746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */; };
+		746D5CB12626C1B100E3BD48 /* PSTerminalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */; };
+		746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */; };
 		OBJ_142 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AFError.swift */; };
 		OBJ_143 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Alamofire.swift */; };
 		OBJ_144 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AlamofireExtended.swift */; };
@@ -268,15 +273,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		746D5ADE2626ACE200E3BD48 /* PSCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCountry.swift; sourceTree = "<group>"; };
+		746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelCountry.swift; sourceTree = "<group>"; };
 		746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCourierCompany.swift; sourceTree = "<group>"; };
 		746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
-		746D5B382626AEE400E3BD48 /* PSPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPackage.swift; sourceTree = "<group>"; };
+		746D5B382626AEE400E3BD48 /* PSParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcel.swift; sourceTree = "<group>"; };
 		746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPackagePayment.swift; sourceTree = "<group>"; };
-		746D5B9B2626B43A00E3BD48 /* PSRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRegistration.swift; sourceTree = "<group>"; };
+		746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelRegistrationRequest.swift; sourceTree = "<group>"; };
 		746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSizeCount.swift; sourceTree = "<group>"; };
 		746D5BC92626B52E00E3BD48 /* PSSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSize.swift; sourceTree = "<group>"; };
 		746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelUser.swift; sourceTree = "<group>"; };
+		746D5C2A2626BAA000E3BD48 /* ParcelAPIRquestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIRquestRouter.swift; sourceTree = "<group>"; };
+		746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUserUpdateRequest.swift; sourceTree = "<group>"; };
+		746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelLoginRequest.swift; sourceTree = "<group>"; };
+		746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminalFilter.swift; sourceTree = "<group>"; };
+		746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPriceFilter.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JWTDecode::JWTDecode::Product" /* JWTDecode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWTDecode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* PSTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminal.swift; sourceTree = "<group>"; };
@@ -461,6 +471,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		746D5C292626BA8F00E3BD48 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				746D5C2A2626BAA000E3BD48 /* ParcelAPIRquestRouter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		746D5C482626BBB000E3BD48 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */,
+				746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */,
+				746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		746D5CAF2626C1A300E3BD48 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */,
+				746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		OBJ_100 /* JWTDecode 2.6.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +748,7 @@
 		OBJ_8 /* PayseraParcelSDK */ = {
 			isa = PBXGroup;
 			children = (
+				746D5C292626BA8F00E3BD48 /* Services */,
 				OBJ_9 /* Entities */,
 			);
 			name = PayseraParcelSDK;
@@ -720,13 +758,14 @@
 		OBJ_9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				746D5CAF2626C1A300E3BD48 /* Filter */,
+				746D5C482626BBB000E3BD48 /* Request */,
 				OBJ_10 /* PSTerminal.swift */,
-				746D5ADE2626ACE200E3BD48 /* PSCountry.swift */,
+				746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */,
 				746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */,
 				746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */,
-				746D5B382626AEE400E3BD48 /* PSPackage.swift */,
+				746D5B382626AEE400E3BD48 /* PSParcel.swift */,
 				746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */,
-				746D5B9B2626B43A00E3BD48 /* PSRegistration.swift */,
 				746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */,
 				746D5BC92626B52E00E3BD48 /* PSSize.swift */,
 				746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */,
@@ -1133,15 +1172,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				746D5B392626AEE400E3BD48 /* PSPackage.swift in Sources */,
+				746D5B392626AEE400E3BD48 /* PSParcel.swift in Sources */,
 				OBJ_280 /* PSTerminal.swift in Sources */,
 				746D5BDA2626B5A600E3BD48 /* PSParcelUser.swift in Sources */,
-				746D5B9C2626B43A00E3BD48 /* PSRegistration.swift in Sources */,
+				746D5B9C2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift in Sources */,
 				746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */,
 				746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */,
+				746D5C4A2626BBEA00E3BD48 /* PSUserUpdateRequest.swift in Sources */,
 				746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */,
 				746D5B742626B0B500E3BD48 /* PSPackagePayment.swift in Sources */,
-				746D5ADF2626ACE200E3BD48 /* PSCountry.swift in Sources */,
+				746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */,
+				746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */,
+				746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */,
+				746D5C2B2626BAA000E3BD48 /* ParcelAPIRquestRouter.swift in Sources */,
+				746D5CB12626C1B100E3BD48 /* PSTerminalFilter.swift in Sources */,
 				746D5BCA2626B52E00E3BD48 /* PSSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
