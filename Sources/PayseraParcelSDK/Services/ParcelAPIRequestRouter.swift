@@ -20,7 +20,7 @@ private struct RequestRoute {
 
 enum ParcelAPIRequestRouter {
     
-    private static let baseURL = URL(string: "")!
+    private static let baseURL = URL(string: "https://parcel-api.paysera.net/public/rest/v1")!
     
     case getUser
     case getAuthorizationURL
