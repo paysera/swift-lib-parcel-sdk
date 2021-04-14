@@ -25,7 +25,7 @@
 		746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */; };
 		746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */; };
 		746D5B392626AEE400E3BD48 /* PSParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B382626AEE400E3BD48 /* PSParcel.swift */; };
-		746D5B742626B0B500E3BD48 /* PSPackagePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */; };
+		746D5B742626B0B500E3BD48 /* PSParcelPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */; };
 		746D5B9C2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */; };
 		746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */; };
 		746D5BCA2626B52E00E3BD48 /* PSSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BC92626B52E00E3BD48 /* PSSize.swift */; };
@@ -279,7 +279,7 @@
 		746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCourierCompany.swift; sourceTree = "<group>"; };
 		746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
 		746D5B382626AEE400E3BD48 /* PSParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcel.swift; sourceTree = "<group>"; };
-		746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPackagePayment.swift; sourceTree = "<group>"; };
+		746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPayment.swift; sourceTree = "<group>"; };
 		746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelRegistrationRequest.swift; sourceTree = "<group>"; };
 		746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSizeCount.swift; sourceTree = "<group>"; };
 		746D5BC92626B52E00E3BD48 /* PSSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSize.swift; sourceTree = "<group>"; };
@@ -770,7 +770,7 @@
 				746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */,
 				746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */,
 				746D5B382626AEE400E3BD48 /* PSParcel.swift */,
-				746D5B732626B0B500E3BD48 /* PSPackagePayment.swift */,
+				746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */,
 				746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */,
 				746D5BC92626B52E00E3BD48 /* PSSize.swift */,
 				746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */,
@@ -1188,7 +1188,7 @@
 				746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */,
 				746D5C4A2626BBEA00E3BD48 /* PSUserUpdateRequest.swift in Sources */,
 				746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */,
-				746D5B742626B0B500E3BD48 /* PSPackagePayment.swift in Sources */,
+				746D5B742626B0B500E3BD48 /* PSParcelPayment.swift in Sources */,
 				746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */,
 				746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */,
 				746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */,

@@ -3,13 +3,17 @@ import Foundation
 
 public final class PSStatusChange: Mappable {
     
-    public var status: String!
     public var createdAt: Date?
+    public var status: PSParcelStatus! {
+        PSParcelStatus(rawValue: statusString)!
+    }
+    
+    var statusString: String!
     
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        status      <- map["status"]
-        createdAt   <- map["created_at"]
+        statusString    <- map["status"]
+        createdAt       <- map["created_at"]
     }
 }
