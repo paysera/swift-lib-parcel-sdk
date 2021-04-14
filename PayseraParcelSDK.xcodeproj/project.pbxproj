@@ -37,6 +37,7 @@
 		746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */; };
 		746D5D152626D72F00E3BD48 /* ParcelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */; };
 		746D5D332626D8D800E3BD48 /* PSAuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D322626D8D800E3BD48 /* PSAuthorizationResult.swift */; };
+		746D5D692626E3A100E3BD48 /* ParcelAPIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */; };
 		OBJ_142 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AFError.swift */; };
 		OBJ_143 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Alamofire.swift */; };
 		OBJ_144 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AlamofireExtended.swift */; };
@@ -291,6 +292,7 @@
 		746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPriceFilter.swift; sourceTree = "<group>"; };
 		746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClient.swift; sourceTree = "<group>"; };
 		746D5D322626D8D800E3BD48 /* PSAuthorizationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAuthorizationResult.swift; sourceTree = "<group>"; };
+		746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClientFactory.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JWTDecode::JWTDecode::Product" /* JWTDecode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWTDecode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* PSTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminal.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 			children = (
 				746D5C2A2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift */,
 				746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */,
+				746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1191,6 +1194,7 @@
 				746D5B742626B0B500E3BD48 /* PSParcelPayment.swift in Sources */,
 				746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */,
 				746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */,
+				746D5D692626E3A100E3BD48 /* ParcelAPIClientFactory.swift in Sources */,
 				746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */,
 				746D5C2B2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift in Sources */,
 				746D5CB12626C1B100E3BD48 /* PSTerminalFilter.swift in Sources */,
