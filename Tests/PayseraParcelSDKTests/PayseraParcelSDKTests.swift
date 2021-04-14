@@ -13,19 +13,36 @@ final class PayseraParcelSDKTests: XCTestCase {
         //credentials.token = try! decode(jwt: "")
         return ParcelAPIClientFactory.createParcelAPIClient(credentials: credentials)
     }()
-
-    func testGetCellSizes() {
+    
+    func testGetUser() {
         executeNonNil(
-            parcelAPIClient.getCellSizes(),
-            description: "Cell sizes must exist"
+            parcelAPIClient.getUser(),
+            description: "User must exist"
         )
     }
     
-    func testGetTerminalSizes() {
-        let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
+    func testGetAuthorizationURL() {
         executeNonNil(
-            parcelAPIClient.getTerminalSizesCount(id: id),
-            description: "Terminal sizes must exist"
+            parcelAPIClient.getAuthorizationURL(),
+            description: "Authorization URL must exist"
+        )
+    }
+    
+    func testGetCourierAuthentication() {
+        let code = ""
+        let state = ""
+        executeNonNil(
+            parcelAPIClient.getCourierAuthentication(code: code, state: state),
+            description: "CourierAuthentication URL must exist"
+        )
+    }
+    
+    func testGetTerminals() {
+        let filter = PSTerminalFilter()
+        
+        executeNonNil(
+            parcelAPIClient.getTerminals(filter: filter),
+            description: "Terminals must exist"
         )
     }
     
@@ -38,12 +55,34 @@ final class PayseraParcelSDKTests: XCTestCase {
         )
     }
     
-    func testGetTerminals() {
-        let filter = PSTerminalFilter()
-        
+    func testGetTerminalSizes() {
+        let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
         executeNonNil(
-            parcelAPIClient.getTerminals(filter: filter),
-            description: "Terminals must exist"
+            parcelAPIClient.getTerminalSizesCount(id: id),
+            description: "Terminal sizes must exist"
+        )
+    }
+    
+    func testGetParcel() {
+        let id = ""
+        executeNonNil(
+            parcelAPIClient.getParcel(id: id),
+            description: "Parcel must exist"
+        )
+    }
+    
+    func testGetParcelStatusChanges() {
+        let id = ""
+        executeNonNil(
+            parcelAPIClient.getParcelStatusChanges(id: id),
+            description: "Parcel statuses must exist"
+        )
+    }
+
+    func testGetCellSizes() {
+        executeNonNil(
+            parcelAPIClient.getCellSizes(),
+            description: "Cell sizes must exist"
         )
     }
     
@@ -69,6 +108,101 @@ final class PayseraParcelSDKTests: XCTestCase {
         executeNonNil(
             parcelAPIClient.getCities(countryCode: countryCode),
             description: "Cities must exist"
+        )
+    }
+    
+    func testUpdateUser() {
+        let request = PSUserUpdateRequest()
+        request.type = ""
+        request.phoneNumber = ""
+        request.email = ""
+        request.mainTerminalID = ""
+        request.oldPassword = ""
+        request.newPassword = ""
+        
+        executeNonNil(
+            parcelAPIClient.updateUser(payload: request),
+            description: "User must updated"
+        )
+    }
+    
+    func testLogin() {
+        let request = PSParcelLoginRequest()
+        request.username = ""
+        request.password = ""
+        executeNonNil(
+            parcelAPIClient.login(payload: request),
+            description: "User must be logged in"
+        )
+    }
+    
+    func testRegisterUser() {
+        let request = PSParcelRegistrationRequest()
+        request.name = ""
+        request.password = ""
+        request.phoneNumber = ""
+        executeNonNil(
+            parcelAPIClient.registerUser(payload: request),
+            description: "User must be registered"
+        )
+    }
+    
+    func testRegisterPayseraUser() {
+        let id = ""
+        executeNonNil(
+            parcelAPIClient.registerPayseraUser(id: id),
+            description: "Paysera User must be registered"
+        )
+    }
+    
+    func testVerifyCode() {
+        let userID = ""
+        let code = ""
+        executeNonNil(
+            parcelAPIClient.verifyCode(userID: userID, code: code),
+            description: "Code must be verified"
+        )
+    }
+    
+    func testResendPhoneVerificationCode() {
+        let userID = ""
+        executeNonNil(
+            parcelAPIClient.resendPhoneVerificationCode(userID: userID),
+            description: "Code must be resent"
+        )
+    }
+    
+    func testRegisterParcel() {
+        let parcel = PSParcel()
+        let payOnReceive = true
+        executeNonNil(
+            parcelAPIClient.registerParcel(payload: parcel, payOnReceive: payOnReceive),
+            description: "Parcel must be registered"
+        )
+    }
+    
+    func testUpdateParcel() {
+        let parcel = PSParcel()
+        let payOnReceive = true
+        executeNonNil(
+            parcelAPIClient.updateParcel(payload: parcel, payOnReceive: payOnReceive),
+            description: "Parcel must be updated"
+        )
+    }
+    
+    func testUnlockParcel() {
+        let id = ""
+        executeNonNil(
+            parcelAPIClient.unlockParcel(id: id),
+            description: "Parcel must be unlocked"
+        )
+    }
+    
+    func testReturnParcel() {
+        let id = ""
+        executeNonNil(
+            parcelAPIClient.returnParcel(id: id),
+            description: "Parcel return must be requested"
         )
     }
 }

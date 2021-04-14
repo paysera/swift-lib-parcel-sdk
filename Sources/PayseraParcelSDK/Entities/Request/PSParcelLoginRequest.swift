@@ -7,6 +7,8 @@ public final class PSParcelLoginRequest: Mappable {
     
     required public init?(map: Map) { }
     
+    public init() { }
+    
     public func mapping(map: Map) {
         username    <- map["username"]
         password    <- map["password"]

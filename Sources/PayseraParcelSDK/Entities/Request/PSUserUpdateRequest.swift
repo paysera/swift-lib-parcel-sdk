@@ -11,6 +11,8 @@ public final class PSUserUpdateRequest: Mappable {
     
     required public init?(map: Map) { }
     
+    public init() { }
+    
     public func mapping(map: Map) {
         type            <- map["type"]
         phoneNumber     <- map["phone_number"]

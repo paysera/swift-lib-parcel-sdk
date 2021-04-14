@@ -8,6 +8,8 @@ public final class PSParcelRegistrationRequest: Mappable {
     
     required public init?(map: Map) { }
     
+    public init() { }
+    
     public func mapping(map: Map) {
         name        <- map["payment_number"]
         phoneNumber <- map["phone_number"]

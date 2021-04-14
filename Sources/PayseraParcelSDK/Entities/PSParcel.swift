@@ -34,6 +34,8 @@ public final class PSParcel: Mappable {
         PSParcelStatus(rawValue: statusString ?? "")
     }
     
+    public init() { }
+    
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
