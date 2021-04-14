@@ -24,10 +24,10 @@ enum ParcelAPIRequestRouter {
     
     case getUser
     case getAuthorizationURL
-    case getLoginState(code: String, state: String)
+    case getCourierAuthentication(code: String, state: String)
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
-    case getTerminalSizes(id: String)
+    case getTerminalSizesCount(id: String)
     case getParcel(id: String)
     case getParcelStatusChanges(id: String)
     case getCellSizes
@@ -58,7 +58,7 @@ private extension ParcelAPIRequestRouter {
         case .getAuthorizationURL:
             return RequestRoute(method: .get, path: "paysera-authorization-url")
         
-        case .getLoginState(let code, let state):
+        case .getCourierAuthentication(let code, let state):
             return RequestRoute(method: .get, path: "paysera-login/\(code)/\(state)")
             
         case .getTerminals(let filter):
@@ -67,7 +67,7 @@ private extension ParcelAPIRequestRouter {
         case .getTerminal(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)")
           
-        case .getTerminalSizes(let id):
+        case .getTerminalSizesCount(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)/sizes")
             
         case .getParcel(let id):

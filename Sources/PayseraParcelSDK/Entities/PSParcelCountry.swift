@@ -10,3 +10,14 @@ public final class PSParcelCountry: Mappable {
         code <- map["country_code"]
     }
 }
+
+public final class PSParcelCity: Mappable {
+    
+    public var name: String!
+    
+    required public init?(map: Map) { }
+    
+    public func mapping(map: Map) {
+        name <- map["city"]
+    }
+}
