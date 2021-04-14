@@ -2,6 +2,7 @@ import XCTest
 import PayseraCommonSDK
 import PayseraParcelSDK
 import JWTDecode
+import PromiseKit
 
 final class PayseraParcelSDKTests: XCTestCase {
     
@@ -12,153 +13,62 @@ final class PayseraParcelSDKTests: XCTestCase {
         //credentials.token = try! decode(jwt: "")
         return ParcelAPIClientFactory.createParcelAPIClient(credentials: credentials)
     }()
-    
-    
 
     func testGetCellSizes() {
-        var actual: [PSSize]?
-        let expectation = XCTestExpectation(description: "Cell sizes must exist")
-               
-        parcelAPIClient
-            .getCellSizes()
-            .done { response in
-                actual = response.items
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getCellSizes(),
+            description: "Cell sizes must exist"
+        )
     }
     
     func testGetTerminalSizes() {
-        var actual: [PSSizeCount]?
-        let expectation = XCTestExpectation(description: "Terminal sizes must exist")
         let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
-        
-        parcelAPIClient
-            .getTerminalSizesCount(id: id)
-            .done { response in
-                actual = response.items
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getTerminalSizesCount(id: id),
+            description: "Terminal sizes must exist"
+        )
     }
     
     func testGetTerminal() {
-        var actual: PSTerminal?
-        let expectation = XCTestExpectation(description: "Terminal must exist")
         let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
         
-        parcelAPIClient
-            .getTerminal(id: id)
-            .done { response in
-                actual = response
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getTerminal(id: id),
+            description: "Terminal must exist"
+        )
     }
     
     func testGetTerminals() {
-        var actual: [PSTerminal]?
-        let expectation = XCTestExpectation(description: "Terminals must exist")
         let filter = PSTerminalFilter()
         
-        parcelAPIClient
-            .getTerminals(filter: filter)
-            .done { response in
-                actual = response.items
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getTerminals(filter: filter),
+            description: "Terminals must exist"
+        )
     }
     
     func testGetPrice() {
-        var actual: PSMoney?
-        let expectation = XCTestExpectation(description: "Price must exist")
         let filter = PSParcelPriceFilter()
         filter.cellSize = "xs"
         
-        parcelAPIClient
-            .getPrice(payload: filter)
-            .done { response in
-                actual = response
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getPrice(payload: filter),
+            description: "Price must exist"
+        )
     }
     
-    func testGetCoutries() {
-        var actual: [PSParcelCountry]?
-        let expectation = XCTestExpectation(description: "Countries must exist")
-
-        parcelAPIClient
-            .getCountries()
-            .done { response in
-                actual = response.items
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+    func testGetCountries() {
+        executeNonNil(
+            parcelAPIClient.getCountries(),
+            description: "Countries must exist"
+        )
     }
     
     func testGetCities() {
-        var actual: [PSParcelCity]?
-        let expectation = XCTestExpectation(description: "Cities must exist")
-
         let countryCode = "LT"
-        
-        parcelAPIClient
-            .getCities(countryCode: countryCode)
-            .done { response in
-                actual = response.items
-            }
-            .catch { error in
-                print(error)
-            }
-            .finally {
-                expectation.fulfill()
-            }
-              
-        wait(for: [expectation], timeout: 10)
-        XCTAssertNotNil(actual)
+        executeNonNil(
+            parcelAPIClient.getCities(countryCode: countryCode),
+            description: "Cities must exist"
+        )
     }
 }

@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		744737592627257E005A0A5E /* XCTestCase+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744737582627257E005A0A5E /* XCTestCase+Helper.swift */; };
 		746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */; };
 		746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */; };
 		746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */; };
@@ -276,6 +277,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		744737582627257E005A0A5E /* XCTestCase+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helper.swift"; sourceTree = "<group>"; };
 		746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelCountry.swift; sourceTree = "<group>"; };
 		746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCourierCompany.swift; sourceTree = "<group>"; };
 		746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 			children = (
 				OBJ_13 /* PayseraParcelSDKTests.swift */,
 				OBJ_14 /* XCTestManifests.swift */,
+				744737582627257E005A0A5E /* XCTestCase+Helper.swift */,
 			);
 			name = PayseraParcelSDKTests;
 			path = Tests/PayseraParcelSDKTests;
@@ -698,7 +701,7 @@
 			path = .build/checkouts/Alamofire/Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -709,7 +712,6 @@
 				OBJ_135 /* PayseraParcelSDK */,
 				OBJ_136 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -1012,7 +1014,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_127 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1215,6 +1217,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_308 /* PayseraParcelSDKTests.swift in Sources */,
+				744737592627257E005A0A5E /* XCTestCase+Helper.swift in Sources */,
 				OBJ_309 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
