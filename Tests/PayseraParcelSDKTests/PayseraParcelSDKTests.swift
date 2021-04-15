@@ -148,7 +148,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testRegisterPayseraUser() {
-        let id = ""
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.registerPayseraUser(id: id),
             description: "Paysera User must be registered"
