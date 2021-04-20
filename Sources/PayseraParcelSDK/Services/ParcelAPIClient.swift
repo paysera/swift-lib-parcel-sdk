@@ -77,7 +77,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.verifyCode(userID: userID, code: code))
     }
     
-    public func resendPhoneVerificationCode(userID: String) -> Promise<Any> {
+    public func resendPhoneVerificationCode(userID: String) -> Promise<Void> {
         doRequest(requestRouter: ParcelAPIRequestRouter.resendPhoneVerificationCode(userID: userID))
     }
     

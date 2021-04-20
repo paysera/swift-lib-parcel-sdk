@@ -11,7 +11,7 @@ public final class PSParcelRegistrationRequest: Mappable {
     public init() { }
     
     public func mapping(map: Map) {
-        name        <- map["payment_number"]
+        name        <- map["name"]
         phoneNumber <- map["phone_number"]
         password    <- map["password"]
     }

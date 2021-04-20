@@ -1,5 +1,6 @@
 import ObjectMapper
 import Foundation
+import PayseraCommonSDK
 
 public final class PSStatusChange: Mappable {
     
@@ -14,6 +15,6 @@ public final class PSStatusChange: Mappable {
     
     public func mapping(map: Map) {
         statusString    <- map["status"]
-        createdAt       <- map["created_at"]
+        createdAt       <- (map["created_at"], DateTransform())
     }
 }

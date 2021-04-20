@@ -53,9 +53,9 @@ public final class PSParcel: Mappable {
         pinCode                 <- map["pin_code"]
         price                   <- map["price"]
         payment                 <- map["payment"]
-        paidAt                  <- map["paid_at"]
-        createdAt               <- map["created_at"]
-        updatedAt               <- map["updated_at"]
+        paidAt                  <- (map["paid_at"], DateTransform())
+        createdAt               <- (map["created_at"], DateTransform())
+        updatedAt               <- (map["updated_at"], DateTransform())
         statusString            <- map["status"]
     }
 }

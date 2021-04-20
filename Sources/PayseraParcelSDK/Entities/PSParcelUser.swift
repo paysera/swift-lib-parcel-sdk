@@ -1,5 +1,6 @@
 import ObjectMapper
 import Foundation
+import PayseraCommonSDK
 
 public final class PSParcelUser: Mappable {
     
@@ -21,7 +22,7 @@ public final class PSParcelUser: Mappable {
         email           <- map["email"]
         courierCompany  <- map["courier_company"]
         mainTerminal    <- map["main_terminal"]
-        createdAt       <- map["created_at"]
-        updatedAt       <- map["updated_at"]
+        createdAt       <- (map["created_at"], DateTransform())
+        updatedAt       <- (map["updated_at"], DateTransform())
     }
 }
