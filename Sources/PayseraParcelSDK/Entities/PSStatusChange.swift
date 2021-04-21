@@ -5,16 +5,12 @@ import PayseraCommonSDK
 public final class PSStatusChange: Mappable {
     
     public var createdAt: Date?
-    public var status: PSParcelStatus! {
-        PSParcelStatus(rawValue: statusString)!
-    }
-    
-    var statusString: String!
-    
+    public var status: PSParcelStatus = .pending
+
     required public init?(map: Map) { }
     
     public func mapping(map: Map) {
-        statusString    <- map["status"]
+        status          <- (map["status"], PSParcelStatus.Transform())
         createdAt       <- (map["created_at"], DateTransform())
     }
 }

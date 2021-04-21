@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"PayseraParcelSDK::PayseraParcelSDKPackageTests::ProductTarget" /* PayseraParcelSDKPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_299 /* Build configuration list for PBXAggregateTarget "PayseraParcelSDKPackageTests" */;
+			buildConfigurationList = OBJ_341 /* Build configuration list for PBXAggregateTarget "PayseraParcelSDKPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_302 /* PBXTargetDependency */,
+				OBJ_344 /* PBXTargetDependency */,
 			);
 			name = PayseraParcelSDKPackageTests;
 			productName = PayseraParcelSDKPackageTests;
@@ -21,253 +21,256 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		744737592627257E005A0A5E /* XCTestCase+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744737582627257E005A0A5E /* XCTestCase+Helper.swift */; };
-		746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */; };
-		746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */; };
-		746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */; };
-		746D5B392626AEE400E3BD48 /* PSParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B382626AEE400E3BD48 /* PSParcel.swift */; };
-		746D5B742626B0B500E3BD48 /* PSParcelPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */; };
-		746D5B9C2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */; };
-		746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */; };
-		746D5BCA2626B52E00E3BD48 /* PSSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BC92626B52E00E3BD48 /* PSSize.swift */; };
-		746D5BDA2626B5A600E3BD48 /* PSParcelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */; };
-		746D5C2B2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C2A2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift */; };
-		746D5C4A2626BBEA00E3BD48 /* PSUserUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */; };
-		746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */; };
-		746D5CB12626C1B100E3BD48 /* PSTerminalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */; };
-		746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */; };
-		746D5D152626D72F00E3BD48 /* ParcelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */; };
-		746D5D332626D8D800E3BD48 /* PSAuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D322626D8D800E3BD48 /* PSAuthorizationResult.swift */; };
-		746D5D692626E3A100E3BD48 /* ParcelAPIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */; };
-		OBJ_142 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AFError.swift */; };
-		OBJ_143 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Alamofire.swift */; };
-		OBJ_144 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AlamofireExtended.swift */; };
-		OBJ_145 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* AuthenticationInterceptor.swift */; };
-		OBJ_146 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* CachedResponseHandler.swift */; };
-		OBJ_147 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Combine.swift */; };
-		OBJ_148 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_149 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* EventMonitor.swift */; };
-		OBJ_150 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* HTTPHeaders.swift */; };
-		OBJ_151 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* HTTPMethod.swift */; };
-		OBJ_152 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* MultipartFormData.swift */; };
-		OBJ_153 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* MultipartUpload.swift */; };
-		OBJ_154 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* NetworkReachabilityManager.swift */; };
-		OBJ_155 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Notifications.swift */; };
-		OBJ_156 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* OperationQueue+Alamofire.swift */; };
-		OBJ_157 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ParameterEncoder.swift */; };
-		OBJ_158 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ParameterEncoding.swift */; };
-		OBJ_159 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Protected.swift */; };
-		OBJ_160 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* RedirectHandler.swift */; };
-		OBJ_161 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Request.swift */; };
-		OBJ_162 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* RequestInterceptor.swift */; };
-		OBJ_163 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* RequestTaskMap.swift */; };
-		OBJ_164 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Response.swift */; };
-		OBJ_165 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* ResponseSerialization.swift */; };
-		OBJ_166 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Result+Alamofire.swift */; };
-		OBJ_167 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* RetryPolicy.swift */; };
-		OBJ_168 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ServerTrustEvaluation.swift */; };
-		OBJ_169 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Session.swift */; };
-		OBJ_170 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* SessionDelegate.swift */; };
-		OBJ_171 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* StringEncoding+Alamofire.swift */; };
-		OBJ_172 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* URLConvertible+URLRequestConvertible.swift */; };
-		OBJ_173 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* URLEncodedFormEncoder.swift */; };
-		OBJ_174 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* URLRequest+Alamofire.swift */; };
-		OBJ_175 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* URLSessionConfiguration+Alamofire.swift */; };
-		OBJ_176 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Validation.swift */; };
-		OBJ_183 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Package.swift */; };
-		OBJ_189 /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* A0JWT.swift */; };
-		OBJ_190 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* Errors.swift */; };
-		OBJ_191 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* JWT.swift */; };
-		OBJ_192 /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* JWTDecode.swift */; };
-		OBJ_193 /* TokenValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* TokenValidators.swift */; };
-		OBJ_194 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* ValidationError.swift */; };
-		OBJ_195 /* ValidatorJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* ValidatorJWT.swift */; };
-		OBJ_202 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Package.swift */; };
-		OBJ_208 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* CodableTransform.swift */; };
-		OBJ_209 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* CustomDateFormatTransform.swift */; };
-		OBJ_210 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* DataTransform.swift */; };
-		OBJ_211 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* DateFormatterTransform.swift */; };
-		OBJ_212 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* DateTransform.swift */; };
-		OBJ_213 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* DictionaryTransform.swift */; };
-		OBJ_214 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* EnumOperators.swift */; };
-		OBJ_215 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* EnumTransform.swift */; };
-		OBJ_216 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* FromJSON.swift */; };
-		OBJ_217 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* HexColorTransform.swift */; };
-		OBJ_218 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* ISO8601DateTransform.swift */; };
-		OBJ_219 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* ImmutableMappable.swift */; };
-		OBJ_220 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* IntegerOperators.swift */; };
-		OBJ_221 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Map.swift */; };
-		OBJ_222 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* MapError.swift */; };
-		OBJ_223 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Mappable.swift */; };
-		OBJ_224 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Mapper.swift */; };
-		OBJ_225 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* NSDecimalNumberTransform.swift */; };
-		OBJ_226 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Operators.swift */; };
-		OBJ_227 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* ToJSON.swift */; };
-		OBJ_228 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* TransformOf.swift */; };
-		OBJ_229 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* TransformOperators.swift */; };
-		OBJ_230 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* TransformType.swift */; };
-		OBJ_231 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* URLTransform.swift */; };
-		OBJ_238 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Package.swift */; };
-		OBJ_244 /* PSApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* PSApiError.swift */; };
-		OBJ_245 /* PSApiJWTCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* PSApiJWTCredentials.swift */; };
-		OBJ_246 /* PSApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PSApiRequest.swift */; };
-		OBJ_247 /* PSBaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PSBaseFilter.swift */; };
-		OBJ_248 /* PSCursors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* PSCursors.swift */; };
-		OBJ_249 /* PSMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PSMetadata.swift */; };
-		OBJ_250 /* PSMetadataAwareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PSMetadataAwareResponse.swift */; };
-		OBJ_251 /* PSMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PSMoney.swift */; };
-		OBJ_252 /* PSRequestHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* PSRequestHeaders.swift */; };
-		OBJ_253 /* PSURLRequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* PSURLRequestHeader.swift */; };
-		OBJ_254 /* PSLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* PSLoggerProtocol.swift */; };
-		OBJ_255 /* PSTokenRefresherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* PSTokenRefresherProtocol.swift */; };
-		OBJ_256 /* PSBaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* PSBaseApiClient.swift */; };
-		OBJ_257 /* PSRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* PSRequestAdapter.swift */; };
-		OBJ_258 /* PSTrustedSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* PSTrustedSession.swift */; };
-		OBJ_260 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
-		OBJ_261 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
-		OBJ_262 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
-		OBJ_263 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_274 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Package.swift */; };
-		OBJ_280 /* PSTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* PSTerminal.swift */; };
-		OBJ_282 /* PayseraCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */; };
-		OBJ_283 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
-		OBJ_284 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
-		OBJ_285 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
-		OBJ_286 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_297 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_308 /* PayseraParcelSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PayseraParcelSDKTests.swift */; };
-		OBJ_309 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* XCTestManifests.swift */; };
-		OBJ_311 /* PayseraParcelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraParcelSDK::PayseraParcelSDK::Product" /* PayseraParcelSDK.framework */; };
-		OBJ_312 /* PayseraCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */; };
-		OBJ_313 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
-		OBJ_314 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
-		OBJ_315 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
-		OBJ_316 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_327 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* Box.swift */; };
-		OBJ_328 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* Catchable.swift */; };
-		OBJ_329 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Configuration.swift */; };
-		OBJ_330 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* CustomStringConvertible.swift */; };
-		OBJ_331 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Error.swift */; };
-		OBJ_332 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* Guarantee.swift */; };
-		OBJ_333 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* LogEvent.swift */; };
-		OBJ_334 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Promise.swift */; };
-		OBJ_335 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* Resolver.swift */; };
-		OBJ_336 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* Thenable.swift */; };
-		OBJ_337 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* after.swift */; };
-		OBJ_338 /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* firstly.swift */; };
-		OBJ_339 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* hang.swift */; };
-		OBJ_340 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* race.swift */; };
-		OBJ_341 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* when.swift */; };
-		OBJ_348 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Package.swift */; };
+		746A2763262FECEE008C8C4E /* PSParcelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A2762262FECEE008C8C4E /* PSParcelStatus.swift */; };
+		746A278F262FED65008C8C4E /* PSParcelPaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A278E262FED65008C8C4E /* PSParcelPaymentStatus.swift */; };
+		OBJ_166 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* AFError.swift */; };
+		OBJ_167 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* Alamofire.swift */; };
+		OBJ_168 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* AlamofireExtended.swift */; };
+		OBJ_169 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* AuthenticationInterceptor.swift */; };
+		OBJ_170 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* CachedResponseHandler.swift */; };
+		OBJ_171 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Combine.swift */; };
+		OBJ_172 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_173 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* EventMonitor.swift */; };
+		OBJ_174 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* HTTPHeaders.swift */; };
+		OBJ_175 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* HTTPMethod.swift */; };
+		OBJ_176 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* MultipartFormData.swift */; };
+		OBJ_177 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* MultipartUpload.swift */; };
+		OBJ_178 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* NetworkReachabilityManager.swift */; };
+		OBJ_179 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Notifications.swift */; };
+		OBJ_180 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* OperationQueue+Alamofire.swift */; };
+		OBJ_181 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ParameterEncoder.swift */; };
+		OBJ_182 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ParameterEncoding.swift */; };
+		OBJ_183 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Protected.swift */; };
+		OBJ_184 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* RedirectHandler.swift */; };
+		OBJ_185 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* Request.swift */; };
+		OBJ_186 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* RequestInterceptor.swift */; };
+		OBJ_187 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* RequestTaskMap.swift */; };
+		OBJ_188 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* Response.swift */; };
+		OBJ_189 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* ResponseSerialization.swift */; };
+		OBJ_190 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* Result+Alamofire.swift */; };
+		OBJ_191 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* RetryPolicy.swift */; };
+		OBJ_192 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* ServerTrustEvaluation.swift */; };
+		OBJ_193 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* Session.swift */; };
+		OBJ_194 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* SessionDelegate.swift */; };
+		OBJ_195 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* StringEncoding+Alamofire.swift */; };
+		OBJ_196 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* URLConvertible+URLRequestConvertible.swift */; };
+		OBJ_197 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* URLEncodedFormEncoder.swift */; };
+		OBJ_198 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* URLRequest+Alamofire.swift */; };
+		OBJ_199 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* URLSessionConfiguration+Alamofire.swift */; };
+		OBJ_200 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* Validation.swift */; };
+		OBJ_207 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* Package.swift */; };
+		OBJ_213 /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* A0JWT.swift */; };
+		OBJ_214 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Errors.swift */; };
+		OBJ_215 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_145 /* JWT.swift */; };
+		OBJ_216 /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* JWTDecode.swift */; };
+		OBJ_217 /* TokenValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* TokenValidators.swift */; };
+		OBJ_218 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* ValidationError.swift */; };
+		OBJ_219 /* ValidatorJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* ValidatorJWT.swift */; };
+		OBJ_226 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* Package.swift */; };
+		OBJ_232 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* CodableTransform.swift */; };
+		OBJ_233 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* CustomDateFormatTransform.swift */; };
+		OBJ_234 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* DataTransform.swift */; };
+		OBJ_235 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* DateFormatterTransform.swift */; };
+		OBJ_236 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* DateTransform.swift */; };
+		OBJ_237 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* DictionaryTransform.swift */; };
+		OBJ_238 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* EnumOperators.swift */; };
+		OBJ_239 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* EnumTransform.swift */; };
+		OBJ_240 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* FromJSON.swift */; };
+		OBJ_241 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HexColorTransform.swift */; };
+		OBJ_242 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ISO8601DateTransform.swift */; };
+		OBJ_243 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* ImmutableMappable.swift */; };
+		OBJ_244 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* IntegerOperators.swift */; };
+		OBJ_245 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Map.swift */; };
+		OBJ_246 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* MapError.swift */; };
+		OBJ_247 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* Mappable.swift */; };
+		OBJ_248 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Mapper.swift */; };
+		OBJ_249 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* NSDecimalNumberTransform.swift */; };
+		OBJ_250 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* Operators.swift */; };
+		OBJ_251 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* ToJSON.swift */; };
+		OBJ_252 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* TransformOf.swift */; };
+		OBJ_253 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* TransformOperators.swift */; };
+		OBJ_254 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* TransformType.swift */; };
+		OBJ_255 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* URLTransform.swift */; };
+		OBJ_262 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Package.swift */; };
+		OBJ_268 /* PSApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* PSApiError.swift */; };
+		OBJ_269 /* PSApiJWTCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* PSApiJWTCredentials.swift */; };
+		OBJ_270 /* PSApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* PSApiRequest.swift */; };
+		OBJ_271 /* PSBaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PSBaseFilter.swift */; };
+		OBJ_272 /* PSCursors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* PSCursors.swift */; };
+		OBJ_273 /* PSMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PSMetadata.swift */; };
+		OBJ_274 /* PSMetadataAwareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PSMetadataAwareResponse.swift */; };
+		OBJ_275 /* PSMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* PSMoney.swift */; };
+		OBJ_276 /* PSRequestHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* PSRequestHeaders.swift */; };
+		OBJ_277 /* PSURLRequestHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* PSURLRequestHeader.swift */; };
+		OBJ_278 /* PSLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* PSLoggerProtocol.swift */; };
+		OBJ_279 /* PSTokenRefresherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* PSTokenRefresherProtocol.swift */; };
+		OBJ_280 /* PSBaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* PSBaseApiClient.swift */; };
+		OBJ_281 /* PSRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* PSRequestAdapter.swift */; };
+		OBJ_282 /* PSTrustedSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* PSTrustedSession.swift */; };
+		OBJ_284 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
+		OBJ_285 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
+		OBJ_286 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_287 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_298 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Package.swift */; };
+		OBJ_304 /* PSParcelPriceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* PSParcelPriceFilter.swift */; };
+		OBJ_305 /* PSTerminalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PSTerminalFilter.swift */; };
+		OBJ_306 /* PSAuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PSAuthorizationResult.swift */; };
+		OBJ_307 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PSCourierCompany.swift */; };
+		OBJ_308 /* PSParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PSParcel.swift */; };
+		OBJ_309 /* PSParcelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PSParcelCountry.swift */; };
+		OBJ_310 /* PSParcelPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PSParcelPayment.swift */; };
+		OBJ_311 /* PSParcelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* PSParcelUser.swift */; };
+		OBJ_312 /* PSSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* PSSize.swift */; };
+		OBJ_313 /* PSSizeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* PSSizeCount.swift */; };
+		OBJ_314 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PSStatusChange.swift */; };
+		OBJ_315 /* PSTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PSTerminal.swift */; };
+		OBJ_316 /* PSParcelLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PSParcelLoginRequest.swift */; };
+		OBJ_317 /* PSParcelRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PSParcelRegistrationRequest.swift */; };
+		OBJ_318 /* PSUserUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PSUserUpdateRequest.swift */; };
+		OBJ_319 /* ParcelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ParcelAPIClient.swift */; };
+		OBJ_320 /* ParcelAPIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ParcelAPIClientFactory.swift */; };
+		OBJ_321 /* ParcelAPIRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ParcelAPIRequestRouter.swift */; };
+		OBJ_324 /* PayseraCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */; };
+		OBJ_325 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
+		OBJ_326 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
+		OBJ_327 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_328 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_339 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_350 /* MockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* MockFactory.swift */; };
+		OBJ_351 /* PayseraParcelSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* PayseraParcelSDKTests.swift */; };
+		OBJ_352 /* XCTestCase+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* XCTestCase+Helper.swift */; };
+		OBJ_353 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* XCTestManifests.swift */; };
+		OBJ_355 /* PayseraParcelSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraParcelSDK::PayseraParcelSDK::Product" /* PayseraParcelSDK.framework */; };
+		OBJ_356 /* PayseraCommonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */; };
+		OBJ_357 /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "JWTDecode::JWTDecode::Product" /* JWTDecode.framework */; };
+		OBJ_358 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */; };
+		OBJ_359 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_360 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_371 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Box.swift */; };
+		OBJ_372 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Catchable.swift */; };
+		OBJ_373 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Configuration.swift */; };
+		OBJ_374 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* CustomStringConvertible.swift */; };
+		OBJ_375 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* Error.swift */; };
+		OBJ_376 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Guarantee.swift */; };
+		OBJ_377 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* LogEvent.swift */; };
+		OBJ_378 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* Promise.swift */; };
+		OBJ_379 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Resolver.swift */; };
+		OBJ_380 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* Thenable.swift */; };
+		OBJ_381 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* after.swift */; };
+		OBJ_382 /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* firstly.swift */; };
+		OBJ_383 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* hang.swift */; };
+		OBJ_384 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* race.swift */; };
+		OBJ_385 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* when.swift */; };
+		OBJ_392 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		746D5AC02626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2718262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PayseraCommonSDK::PayseraCommonSDK";
 			remoteInfo = PayseraCommonSDK;
 		};
-		746D5AC12626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2719262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "JWTDecode::JWTDecode";
 			remoteInfo = JWTDecode;
 		};
-		746D5AC22626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271A262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ObjectMapper::ObjectMapper";
 			remoteInfo = ObjectMapper;
 		};
-		746D5AC32626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271B262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PromiseKit::PromiseKit";
 			remoteInfo = PromiseKit;
 		};
-		746D5AC42626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271C262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		746D5AC52626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271D262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "JWTDecode::JWTDecode";
 			remoteInfo = JWTDecode;
 		};
-		746D5AC62626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271E262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ObjectMapper::ObjectMapper";
 			remoteInfo = ObjectMapper;
 		};
-		746D5AC72626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A271F262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PromiseKit::PromiseKit";
 			remoteInfo = PromiseKit;
 		};
-		746D5AC82626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2720262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		746D5AC92626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2721262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PayseraParcelSDK::PayseraParcelSDK";
 			remoteInfo = PayseraParcelSDK;
 		};
-		746D5ACA2626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2722262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PayseraCommonSDK::PayseraCommonSDK";
 			remoteInfo = PayseraCommonSDK;
 		};
-		746D5ACB2626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2723262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "JWTDecode::JWTDecode";
 			remoteInfo = JWTDecode;
 		};
-		746D5ACC2626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2724262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "ObjectMapper::ObjectMapper";
 			remoteInfo = ObjectMapper;
 		};
-		746D5ACD2626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2725262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PromiseKit::PromiseKit";
 			remoteInfo = PromiseKit;
 		};
-		746D5ACE2626A9C900E3BD48 /* PBXContainerItemProxy */ = {
+		746A2726262FEC22008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		746D5AD92626A9CA00E3BD48 /* PBXContainerItemProxy */ = {
+		746A2731262FEC23008C8C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -277,133 +280,136 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		744737582627257E005A0A5E /* XCTestCase+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helper.swift"; sourceTree = "<group>"; };
-		746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelCountry.swift; sourceTree = "<group>"; };
-		746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCourierCompany.swift; sourceTree = "<group>"; };
-		746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
-		746D5B382626AEE400E3BD48 /* PSParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcel.swift; sourceTree = "<group>"; };
-		746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPayment.swift; sourceTree = "<group>"; };
-		746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelRegistrationRequest.swift; sourceTree = "<group>"; };
-		746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSizeCount.swift; sourceTree = "<group>"; };
-		746D5BC92626B52E00E3BD48 /* PSSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSize.swift; sourceTree = "<group>"; };
-		746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelUser.swift; sourceTree = "<group>"; };
-		746D5C2A2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIRequestRouter.swift; sourceTree = "<group>"; };
-		746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUserUpdateRequest.swift; sourceTree = "<group>"; };
-		746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelLoginRequest.swift; sourceTree = "<group>"; };
-		746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminalFilter.swift; sourceTree = "<group>"; };
-		746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPriceFilter.swift; sourceTree = "<group>"; };
-		746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClient.swift; sourceTree = "<group>"; };
-		746D5D322626D8D800E3BD48 /* PSAuthorizationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAuthorizationResult.swift; sourceTree = "<group>"; };
-		746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClientFactory.swift; sourceTree = "<group>"; };
+		746A2762262FECEE008C8C4E /* PSParcelStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelStatus.swift; sourceTree = "<group>"; };
+		746A278E262FED65008C8C4E /* PSParcelPaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPaymentStatus.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JWTDecode::JWTDecode::Product" /* JWTDecode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWTDecode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* PSTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminal.swift; sourceTree = "<group>"; };
-		OBJ_102 /* A0JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A0JWT.swift; sourceTree = "<group>"; };
-		OBJ_103 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		OBJ_104 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
-		OBJ_105 /* JWTDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecode.swift; sourceTree = "<group>"; };
-		OBJ_106 /* TokenValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenValidators.swift; sourceTree = "<group>"; };
-		OBJ_107 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
-		OBJ_108 /* ValidatorJWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorJWT.swift; sourceTree = "<group>"; };
-		OBJ_109 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/JWTDecode.swift/Package.swift"; sourceTree = "<group>"; };
-		OBJ_111 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/PromiseKit/Package.swift"; sourceTree = "<group>"; };
-		OBJ_112 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
-		OBJ_113 /* Catchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catchable.swift; sourceTree = "<group>"; };
-		OBJ_114 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		OBJ_115 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
-		OBJ_116 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_117 /* Guarantee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guarantee.swift; sourceTree = "<group>"; };
-		OBJ_118 /* LogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEvent.swift; sourceTree = "<group>"; };
-		OBJ_119 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
-		OBJ_120 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
-		OBJ_121 /* Thenable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thenable.swift; sourceTree = "<group>"; };
-		OBJ_122 /* after.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = after.swift; sourceTree = "<group>"; };
-		OBJ_123 /* firstly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstly.swift; sourceTree = "<group>"; };
-		OBJ_124 /* hang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hang.swift; sourceTree = "<group>"; };
-		OBJ_125 /* race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = race.swift; sourceTree = "<group>"; };
-		OBJ_126 /* when.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = when.swift; sourceTree = "<group>"; };
-		OBJ_13 /* PayseraParcelSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayseraParcelSDKTests.swift; sourceTree = "<group>"; };
-		OBJ_135 /* PayseraParcelSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayseraParcelSDK; sourceTree = SOURCE_ROOT; };
-		OBJ_136 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_14 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_19 /* PSApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiError.swift; sourceTree = "<group>"; };
-		OBJ_20 /* PSApiJWTCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiJWTCredentials.swift; sourceTree = "<group>"; };
-		OBJ_21 /* PSApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiRequest.swift; sourceTree = "<group>"; };
-		OBJ_22 /* PSBaseFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSBaseFilter.swift; sourceTree = "<group>"; };
-		OBJ_23 /* PSCursors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCursors.swift; sourceTree = "<group>"; };
-		OBJ_24 /* PSMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMetadata.swift; sourceTree = "<group>"; };
-		OBJ_25 /* PSMetadataAwareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMetadataAwareResponse.swift; sourceTree = "<group>"; };
-		OBJ_26 /* PSMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMoney.swift; sourceTree = "<group>"; };
-		OBJ_27 /* PSRequestHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRequestHeaders.swift; sourceTree = "<group>"; };
-		OBJ_28 /* PSURLRequestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSURLRequestHeader.swift; sourceTree = "<group>"; };
-		OBJ_30 /* PSLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSLoggerProtocol.swift; sourceTree = "<group>"; };
-		OBJ_31 /* PSTokenRefresherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTokenRefresherProtocol.swift; sourceTree = "<group>"; };
-		OBJ_33 /* PSBaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSBaseApiClient.swift; sourceTree = "<group>"; };
-		OBJ_34 /* PSRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRequestAdapter.swift; sourceTree = "<group>"; };
-		OBJ_35 /* PSTrustedSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTrustedSession.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/swift-lib-common-sdk/Package.swift"; sourceTree = "<group>"; };
-		OBJ_38 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/Alamofire/Package.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_41 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
-		OBJ_42 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_43 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
-		OBJ_45 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_46 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		OBJ_47 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		OBJ_48 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		OBJ_49 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_50 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
-		OBJ_51 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_53 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_54 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
-		OBJ_55 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_56 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
-		OBJ_57 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
-		OBJ_58 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_59 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		OBJ_100 /* firstly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstly.swift; sourceTree = "<group>"; };
+		OBJ_101 /* hang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hang.swift; sourceTree = "<group>"; };
+		OBJ_102 /* race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = race.swift; sourceTree = "<group>"; };
+		OBJ_103 /* when.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = when.swift; sourceTree = "<group>"; };
+		OBJ_105 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/Alamofire/Package.swift"; sourceTree = "<group>"; };
+		OBJ_106 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_107 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_108 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
+		OBJ_109 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		OBJ_11 /* PSParcelPriceFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPriceFilter.swift; sourceTree = "<group>"; };
+		OBJ_110 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
+		OBJ_111 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
+		OBJ_112 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_113 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		OBJ_114 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		OBJ_115 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		OBJ_116 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_117 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
+		OBJ_118 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_119 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_12 /* PSTerminalFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminalFilter.swift; sourceTree = "<group>"; };
+		OBJ_120 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_121 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		OBJ_122 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_123 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		OBJ_124 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
+		OBJ_125 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_126 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		OBJ_127 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
+		OBJ_128 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_129 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_13 /* PSAuthorizationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAuthorizationResult.swift; sourceTree = "<group>"; };
+		OBJ_130 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_131 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
+		OBJ_132 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		OBJ_133 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		OBJ_134 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_135 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_136 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		OBJ_137 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		OBJ_138 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_139 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* PSCourierCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCourierCompany.swift; sourceTree = "<group>"; };
+		OBJ_140 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_143 /* A0JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A0JWT.swift; sourceTree = "<group>"; };
+		OBJ_144 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_145 /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		OBJ_146 /* JWTDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecode.swift; sourceTree = "<group>"; };
+		OBJ_147 /* TokenValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenValidators.swift; sourceTree = "<group>"; };
+		OBJ_148 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		OBJ_149 /* ValidatorJWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorJWT.swift; sourceTree = "<group>"; };
+		OBJ_15 /* PSParcel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcel.swift; sourceTree = "<group>"; };
+		OBJ_150 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/JWTDecode.swift/Package.swift"; sourceTree = "<group>"; };
+		OBJ_159 /* PayseraParcelSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayseraParcelSDK; sourceTree = SOURCE_ROOT; };
+		OBJ_16 /* PSParcelCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelCountry.swift; sourceTree = "<group>"; };
+		OBJ_160 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_17 /* PSParcelPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelPayment.swift; sourceTree = "<group>"; };
+		OBJ_18 /* PSParcelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelUser.swift; sourceTree = "<group>"; };
+		OBJ_19 /* PSSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSize.swift; sourceTree = "<group>"; };
+		OBJ_20 /* PSSizeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSizeCount.swift; sourceTree = "<group>"; };
+		OBJ_21 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
+		OBJ_22 /* PSTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminal.swift; sourceTree = "<group>"; };
+		OBJ_24 /* PSParcelLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelLoginRequest.swift; sourceTree = "<group>"; };
+		OBJ_25 /* PSParcelRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelRegistrationRequest.swift; sourceTree = "<group>"; };
+		OBJ_26 /* PSUserUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUserUpdateRequest.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ParcelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClient.swift; sourceTree = "<group>"; };
+		OBJ_29 /* ParcelAPIClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClientFactory.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ParcelAPIRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIRequestRouter.swift; sourceTree = "<group>"; };
+		OBJ_35 /* MockFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFactory.swift; sourceTree = "<group>"; };
+		OBJ_36 /* PayseraParcelSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayseraParcelSDKTests.swift; sourceTree = "<group>"; };
+		OBJ_37 /* XCTestCase+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helper.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* PSApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiError.swift; sourceTree = "<group>"; };
+		OBJ_44 /* PSApiJWTCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiJWTCredentials.swift; sourceTree = "<group>"; };
+		OBJ_45 /* PSApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSApiRequest.swift; sourceTree = "<group>"; };
+		OBJ_46 /* PSBaseFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSBaseFilter.swift; sourceTree = "<group>"; };
+		OBJ_47 /* PSCursors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSCursors.swift; sourceTree = "<group>"; };
+		OBJ_48 /* PSMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMetadata.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PSMetadataAwareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMetadataAwareResponse.swift; sourceTree = "<group>"; };
+		OBJ_50 /* PSMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSMoney.swift; sourceTree = "<group>"; };
+		OBJ_51 /* PSRequestHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRequestHeaders.swift; sourceTree = "<group>"; };
+		OBJ_52 /* PSURLRequestHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSURLRequestHeader.swift; sourceTree = "<group>"; };
+		OBJ_54 /* PSLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSLoggerProtocol.swift; sourceTree = "<group>"; };
+		OBJ_55 /* PSTokenRefresherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTokenRefresherProtocol.swift; sourceTree = "<group>"; };
+		OBJ_57 /* PSBaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSBaseApiClient.swift; sourceTree = "<group>"; };
+		OBJ_58 /* PSRequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRequestAdapter.swift; sourceTree = "<group>"; };
+		OBJ_59 /* PSTrustedSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTrustedSession.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
-		OBJ_61 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_62 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_63 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_64 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
-		OBJ_65 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		OBJ_66 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		OBJ_67 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_68 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_69 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		OBJ_70 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		OBJ_71 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_72 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_73 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/ObjectMapper/Package.swift"; sourceTree = "<group>"; };
-		OBJ_76 /* CodableTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTransform.swift; sourceTree = "<group>"; };
-		OBJ_77 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		OBJ_78 /* DataTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
-		OBJ_79 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
-		OBJ_80 /* DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
-		OBJ_81 /* DictionaryTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
-		OBJ_82 /* EnumOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
-		OBJ_83 /* EnumTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
-		OBJ_84 /* FromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
-		OBJ_85 /* HexColorTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
-		OBJ_86 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		OBJ_87 /* ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
-		OBJ_88 /* IntegerOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
-		OBJ_89 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
-		OBJ_90 /* MapError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
-		OBJ_91 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
-		OBJ_92 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
-		OBJ_93 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
-		OBJ_94 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		OBJ_95 /* ToJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
-		OBJ_96 /* TransformOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
-		OBJ_97 /* TransformOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
-		OBJ_98 /* TransformType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
-		OBJ_99 /* URLTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		OBJ_60 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/swift-lib-common-sdk/Package.swift"; sourceTree = "<group>"; };
+		OBJ_62 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/ObjectMapper/Package.swift"; sourceTree = "<group>"; };
+		OBJ_63 /* CodableTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTransform.swift; sourceTree = "<group>"; };
+		OBJ_64 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		OBJ_65 /* DataTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransform.swift; sourceTree = "<group>"; };
+		OBJ_66 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTransform.swift; sourceTree = "<group>"; };
+		OBJ_67 /* DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		OBJ_68 /* DictionaryTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTransform.swift; sourceTree = "<group>"; };
+		OBJ_69 /* EnumOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
+		OBJ_70 /* EnumTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		OBJ_71 /* FromJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		OBJ_72 /* HexColorTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorTransform.swift; sourceTree = "<group>"; };
+		OBJ_73 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		OBJ_74 /* ImmutableMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
+		OBJ_75 /* IntegerOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerOperators.swift; sourceTree = "<group>"; };
+		OBJ_76 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		OBJ_77 /* MapError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapError.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		OBJ_79 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		OBJ_80 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		OBJ_81 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		OBJ_82 /* ToJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		OBJ_83 /* TransformOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		OBJ_84 /* TransformOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
+		OBJ_85 /* TransformType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		OBJ_86 /* URLTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		OBJ_88 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/gerald/Desktop/Paysera/swift-lib-parcel-sdk/.build/checkouts/PromiseKit/Package.swift"; sourceTree = "<group>"; };
+		OBJ_89 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		OBJ_90 /* Catchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catchable.swift; sourceTree = "<group>"; };
+		OBJ_91 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_92 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		OBJ_93 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_94 /* Guarantee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guarantee.swift; sourceTree = "<group>"; };
+		OBJ_95 /* LogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEvent.swift; sourceTree = "<group>"; };
+		OBJ_96 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		OBJ_97 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		OBJ_98 /* Thenable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thenable.swift; sourceTree = "<group>"; };
+		OBJ_99 /* after.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = after.swift; sourceTree = "<group>"; };
 		"ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayseraCommonSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PayseraParcelSDK::PayseraParcelSDK::Product" /* PayseraParcelSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayseraParcelSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -412,64 +418,64 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_177 /* Frameworks */ = {
+		OBJ_201 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_196 /* Frameworks */ = {
+		OBJ_220 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_232 /* Frameworks */ = {
+		OBJ_256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_259 /* Frameworks */ = {
+		OBJ_283 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_260 /* JWTDecode.framework in Frameworks */,
-				OBJ_261 /* ObjectMapper.framework in Frameworks */,
-				OBJ_262 /* PromiseKit.framework in Frameworks */,
-				OBJ_263 /* Alamofire.framework in Frameworks */,
+				OBJ_284 /* JWTDecode.framework in Frameworks */,
+				OBJ_285 /* ObjectMapper.framework in Frameworks */,
+				OBJ_286 /* PromiseKit.framework in Frameworks */,
+				OBJ_287 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_281 /* Frameworks */ = {
+		OBJ_323 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_282 /* PayseraCommonSDK.framework in Frameworks */,
-				OBJ_283 /* JWTDecode.framework in Frameworks */,
-				OBJ_284 /* ObjectMapper.framework in Frameworks */,
-				OBJ_285 /* PromiseKit.framework in Frameworks */,
-				OBJ_286 /* Alamofire.framework in Frameworks */,
+				OBJ_324 /* PayseraCommonSDK.framework in Frameworks */,
+				OBJ_325 /* JWTDecode.framework in Frameworks */,
+				OBJ_326 /* ObjectMapper.framework in Frameworks */,
+				OBJ_327 /* PromiseKit.framework in Frameworks */,
+				OBJ_328 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_310 /* Frameworks */ = {
+		OBJ_354 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_311 /* PayseraParcelSDK.framework in Frameworks */,
-				OBJ_312 /* PayseraCommonSDK.framework in Frameworks */,
-				OBJ_313 /* JWTDecode.framework in Frameworks */,
-				OBJ_314 /* ObjectMapper.framework in Frameworks */,
-				OBJ_315 /* PromiseKit.framework in Frameworks */,
-				OBJ_316 /* Alamofire.framework in Frameworks */,
+				OBJ_355 /* PayseraParcelSDK.framework in Frameworks */,
+				OBJ_356 /* PayseraCommonSDK.framework in Frameworks */,
+				OBJ_357 /* JWTDecode.framework in Frameworks */,
+				OBJ_358 /* ObjectMapper.framework in Frameworks */,
+				OBJ_359 /* PromiseKit.framework in Frameworks */,
+				OBJ_360 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_342 /* Frameworks */ = {
+		OBJ_386 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -479,240 +485,251 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		746D5C292626BA8F00E3BD48 /* Services */ = {
+		OBJ_10 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				746D5C2A2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift */,
-				746D5D142626D72F00E3BD48 /* ParcelAPIClient.swift */,
-				746D5D682626E3A100E3BD48 /* ParcelAPIClientFactory.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		746D5C482626BBB000E3BD48 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				746D5B9B2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift */,
-				746D5C492626BBEA00E3BD48 /* PSUserUpdateRequest.swift */,
-				746D5C752626BDB000E3BD48 /* PSParcelLoginRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		746D5CAF2626C1A300E3BD48 /* Filter */ = {
-			isa = PBXGroup;
-			children = (
-				746D5CB02626C1B100E3BD48 /* PSTerminalFilter.swift */,
-				746D5CDE2626C6C800E3BD48 /* PSParcelPriceFilter.swift */,
+				OBJ_11 /* PSParcelPriceFilter.swift */,
+				OBJ_12 /* PSTerminalFilter.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
 		};
-		OBJ_100 /* JWTDecode 2.6.0 */ = {
+		OBJ_104 /* Alamofire 5.4.2 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_101 /* JWTDecode */,
-				OBJ_109 /* Package.swift */,
-			);
-			name = "JWTDecode 2.6.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_101 /* JWTDecode */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_102 /* A0JWT.swift */,
-				OBJ_103 /* Errors.swift */,
-				OBJ_104 /* JWT.swift */,
-				OBJ_105 /* JWTDecode.swift */,
-				OBJ_106 /* TokenValidators.swift */,
-				OBJ_107 /* ValidationError.swift */,
-				OBJ_108 /* ValidatorJWT.swift */,
-			);
-			name = JWTDecode;
-			path = .build/checkouts/JWTDecode.swift/JWTDecode;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_11 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* PayseraParcelSDKTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_110 /* PromiseKit 6.13.3 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_111 /* Package.swift */,
-				OBJ_112 /* Box.swift */,
-				OBJ_113 /* Catchable.swift */,
-				OBJ_114 /* Configuration.swift */,
-				OBJ_115 /* CustomStringConvertible.swift */,
-				OBJ_116 /* Error.swift */,
-				OBJ_117 /* Guarantee.swift */,
-				OBJ_118 /* LogEvent.swift */,
-				OBJ_119 /* Promise.swift */,
-				OBJ_120 /* Resolver.swift */,
-				OBJ_121 /* Thenable.swift */,
-				OBJ_122 /* after.swift */,
-				OBJ_123 /* firstly.swift */,
-				OBJ_124 /* hang.swift */,
-				OBJ_125 /* race.swift */,
-				OBJ_126 /* when.swift */,
-			);
-			name = "PromiseKit 6.13.3";
-			path = .build/checkouts/PromiseKit/Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_12 /* PayseraParcelSDKTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_13 /* PayseraParcelSDKTests.swift */,
-				OBJ_14 /* XCTestManifests.swift */,
-				744737582627257E005A0A5E /* XCTestCase+Helper.swift */,
-			);
-			name = PayseraParcelSDKTests;
-			path = Tests/PayseraParcelSDKTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_127 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
-				"PayseraParcelSDK::PayseraParcelSDKTests::Product" /* PayseraParcelSDKTests.xctest */,
-				"ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */,
-				"PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */,
-				"PayseraParcelSDK::PayseraParcelSDK::Product" /* PayseraParcelSDK.framework */,
-				"PromiseKit::PromiseKit::Product" /* PromiseKit.framework */,
-				"JWTDecode::JWTDecode::Product" /* JWTDecode.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_15 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_16 /* PayseraCommonSDK 3.0.1 */,
-				OBJ_37 /* Alamofire 5.4.2 */,
-				OBJ_74 /* ObjectMapper 4.2.0 */,
-				OBJ_100 /* JWTDecode 2.6.0 */,
-				OBJ_110 /* PromiseKit 6.13.3 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_16 /* PayseraCommonSDK 3.0.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* PayseraCommonSDK */,
-				OBJ_36 /* Package.swift */,
-			);
-			name = "PayseraCommonSDK 3.0.1";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_17 /* PayseraCommonSDK */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_18 /* Entities */,
-				OBJ_29 /* Protocols */,
-				OBJ_32 /* Services */,
-			);
-			name = PayseraCommonSDK;
-			path = ".build/checkouts/swift-lib-common-sdk/Sources/PayseraCommonSDK";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_18 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_19 /* PSApiError.swift */,
-				OBJ_20 /* PSApiJWTCredentials.swift */,
-				OBJ_21 /* PSApiRequest.swift */,
-				OBJ_22 /* PSBaseFilter.swift */,
-				OBJ_23 /* PSCursors.swift */,
-				OBJ_24 /* PSMetadata.swift */,
-				OBJ_25 /* PSMetadataAwareResponse.swift */,
-				OBJ_26 /* PSMoney.swift */,
-				OBJ_27 /* PSRequestHeaders.swift */,
-				OBJ_28 /* PSURLRequestHeader.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		OBJ_29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_30 /* PSLoggerProtocol.swift */,
-				OBJ_31 /* PSTokenRefresherProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		OBJ_32 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_33 /* PSBaseApiClient.swift */,
-				OBJ_34 /* PSRequestAdapter.swift */,
-				OBJ_35 /* PSTrustedSession.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		OBJ_37 /* Alamofire 5.4.2 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_38 /* Package.swift */,
-				OBJ_39 /* AFError.swift */,
-				OBJ_40 /* Alamofire.swift */,
-				OBJ_41 /* AlamofireExtended.swift */,
-				OBJ_42 /* AuthenticationInterceptor.swift */,
-				OBJ_43 /* CachedResponseHandler.swift */,
-				OBJ_44 /* Combine.swift */,
-				OBJ_45 /* DispatchQueue+Alamofire.swift */,
-				OBJ_46 /* EventMonitor.swift */,
-				OBJ_47 /* HTTPHeaders.swift */,
-				OBJ_48 /* HTTPMethod.swift */,
-				OBJ_49 /* MultipartFormData.swift */,
-				OBJ_50 /* MultipartUpload.swift */,
-				OBJ_51 /* NetworkReachabilityManager.swift */,
-				OBJ_52 /* Notifications.swift */,
-				OBJ_53 /* OperationQueue+Alamofire.swift */,
-				OBJ_54 /* ParameterEncoder.swift */,
-				OBJ_55 /* ParameterEncoding.swift */,
-				OBJ_56 /* Protected.swift */,
-				OBJ_57 /* RedirectHandler.swift */,
-				OBJ_58 /* Request.swift */,
-				OBJ_59 /* RequestInterceptor.swift */,
-				OBJ_60 /* RequestTaskMap.swift */,
-				OBJ_61 /* Response.swift */,
-				OBJ_62 /* ResponseSerialization.swift */,
-				OBJ_63 /* Result+Alamofire.swift */,
-				OBJ_64 /* RetryPolicy.swift */,
-				OBJ_65 /* ServerTrustEvaluation.swift */,
-				OBJ_66 /* Session.swift */,
-				OBJ_67 /* SessionDelegate.swift */,
-				OBJ_68 /* StringEncoding+Alamofire.swift */,
-				OBJ_69 /* URLConvertible+URLRequestConvertible.swift */,
-				OBJ_70 /* URLEncodedFormEncoder.swift */,
-				OBJ_71 /* URLRequest+Alamofire.swift */,
-				OBJ_72 /* URLSessionConfiguration+Alamofire.swift */,
-				OBJ_73 /* Validation.swift */,
+				OBJ_105 /* Package.swift */,
+				OBJ_106 /* AFError.swift */,
+				OBJ_107 /* Alamofire.swift */,
+				OBJ_108 /* AlamofireExtended.swift */,
+				OBJ_109 /* AuthenticationInterceptor.swift */,
+				OBJ_110 /* CachedResponseHandler.swift */,
+				OBJ_111 /* Combine.swift */,
+				OBJ_112 /* DispatchQueue+Alamofire.swift */,
+				OBJ_113 /* EventMonitor.swift */,
+				OBJ_114 /* HTTPHeaders.swift */,
+				OBJ_115 /* HTTPMethod.swift */,
+				OBJ_116 /* MultipartFormData.swift */,
+				OBJ_117 /* MultipartUpload.swift */,
+				OBJ_118 /* NetworkReachabilityManager.swift */,
+				OBJ_119 /* Notifications.swift */,
+				OBJ_120 /* OperationQueue+Alamofire.swift */,
+				OBJ_121 /* ParameterEncoder.swift */,
+				OBJ_122 /* ParameterEncoding.swift */,
+				OBJ_123 /* Protected.swift */,
+				OBJ_124 /* RedirectHandler.swift */,
+				OBJ_125 /* Request.swift */,
+				OBJ_126 /* RequestInterceptor.swift */,
+				OBJ_127 /* RequestTaskMap.swift */,
+				OBJ_128 /* Response.swift */,
+				OBJ_129 /* ResponseSerialization.swift */,
+				OBJ_130 /* Result+Alamofire.swift */,
+				OBJ_131 /* RetryPolicy.swift */,
+				OBJ_132 /* ServerTrustEvaluation.swift */,
+				OBJ_133 /* Session.swift */,
+				OBJ_134 /* SessionDelegate.swift */,
+				OBJ_135 /* StringEncoding+Alamofire.swift */,
+				OBJ_136 /* URLConvertible+URLRequestConvertible.swift */,
+				OBJ_137 /* URLEncodedFormEncoder.swift */,
+				OBJ_138 /* URLRequest+Alamofire.swift */,
+				OBJ_139 /* URLSessionConfiguration+Alamofire.swift */,
+				OBJ_140 /* Validation.swift */,
 			);
 			name = "Alamofire 5.4.2";
 			path = .build/checkouts/Alamofire/Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 = {
+		OBJ_141 /* JWTDecode 2.6.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_142 /* JWTDecode */,
+				OBJ_150 /* Package.swift */,
+			);
+			name = "JWTDecode 2.6.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_142 /* JWTDecode */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_143 /* A0JWT.swift */,
+				OBJ_144 /* Errors.swift */,
+				OBJ_145 /* JWT.swift */,
+				OBJ_146 /* JWTDecode.swift */,
+				OBJ_147 /* TokenValidators.swift */,
+				OBJ_148 /* ValidationError.swift */,
+				OBJ_149 /* ValidatorJWT.swift */,
+			);
+			name = JWTDecode;
+			path = .build/checkouts/JWTDecode.swift/JWTDecode;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_151 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"PayseraParcelSDK::PayseraParcelSDK::Product" /* PayseraParcelSDK.framework */,
+				"PayseraCommonSDK::PayseraCommonSDK::Product" /* PayseraCommonSDK.framework */,
+				"PromiseKit::PromiseKit::Product" /* PromiseKit.framework */,
+				"PayseraParcelSDK::PayseraParcelSDKTests::Product" /* PayseraParcelSDKTests.xctest */,
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"JWTDecode::JWTDecode::Product" /* JWTDecode.framework */,
+				"ObjectMapper::ObjectMapper::Product" /* ObjectMapper.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_23 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* PSParcelLoginRequest.swift */,
+				OBJ_25 /* PSParcelRegistrationRequest.swift */,
+				OBJ_26 /* PSUserUpdateRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* ParcelAPIClient.swift */,
+				OBJ_29 /* ParcelAPIClientFactory.swift */,
+				OBJ_30 /* ParcelAPIRequestRouter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_33 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* PayseraParcelSDKTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_34 /* PayseraParcelSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* MockFactory.swift */,
+				OBJ_36 /* PayseraParcelSDKTests.swift */,
+				OBJ_37 /* XCTestCase+Helper.swift */,
+				OBJ_38 /* XCTestManifests.swift */,
+			);
+			name = PayseraParcelSDKTests;
+			path = Tests/PayseraParcelSDKTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* PayseraCommonSDK 3.0.1 */,
+				OBJ_61 /* ObjectMapper 4.2.0 */,
+				OBJ_87 /* PromiseKit 6.13.3 */,
+				OBJ_104 /* Alamofire 5.4.2 */,
+				OBJ_141 /* JWTDecode 2.6.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* PayseraCommonSDK 3.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* PayseraCommonSDK */,
+				OBJ_60 /* Package.swift */,
+			);
+			name = "PayseraCommonSDK 3.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* PayseraCommonSDK */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Entities */,
+				OBJ_53 /* Protocols */,
+				OBJ_56 /* Services */,
+			);
+			name = PayseraCommonSDK;
+			path = ".build/checkouts/swift-lib-common-sdk/Sources/PayseraCommonSDK";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_42 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* PSApiError.swift */,
+				OBJ_44 /* PSApiJWTCredentials.swift */,
+				OBJ_45 /* PSApiRequest.swift */,
+				OBJ_46 /* PSBaseFilter.swift */,
+				OBJ_47 /* PSCursors.swift */,
+				OBJ_48 /* PSMetadata.swift */,
+				OBJ_49 /* PSMetadataAwareResponse.swift */,
+				OBJ_50 /* PSMoney.swift */,
+				OBJ_51 /* PSRequestHeaders.swift */,
+				OBJ_52 /* PSURLRequestHeader.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_11 /* Tests */,
-				OBJ_15 /* Dependencies */,
-				OBJ_127 /* Products */,
-				OBJ_135 /* PayseraParcelSDK */,
-				OBJ_136 /* README.md */,
+				OBJ_33 /* Tests */,
+				OBJ_39 /* Dependencies */,
+				OBJ_151 /* Products */,
+				OBJ_159 /* PayseraParcelSDK */,
+				OBJ_160 /* README.md */,
 			);
+			name = "";
 			sourceTree = "<group>";
+		};
+		OBJ_53 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* PSLoggerProtocol.swift */,
+				OBJ_55 /* PSTokenRefresherProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* PSBaseApiClient.swift */,
+				OBJ_58 /* PSRequestAdapter.swift */,
+				OBJ_59 /* PSTrustedSession.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_61 /* ObjectMapper 4.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_62 /* Package.swift */,
+				OBJ_63 /* CodableTransform.swift */,
+				OBJ_64 /* CustomDateFormatTransform.swift */,
+				OBJ_65 /* DataTransform.swift */,
+				OBJ_66 /* DateFormatterTransform.swift */,
+				OBJ_67 /* DateTransform.swift */,
+				OBJ_68 /* DictionaryTransform.swift */,
+				OBJ_69 /* EnumOperators.swift */,
+				OBJ_70 /* EnumTransform.swift */,
+				OBJ_71 /* FromJSON.swift */,
+				OBJ_72 /* HexColorTransform.swift */,
+				OBJ_73 /* ISO8601DateTransform.swift */,
+				OBJ_74 /* ImmutableMappable.swift */,
+				OBJ_75 /* IntegerOperators.swift */,
+				OBJ_76 /* Map.swift */,
+				OBJ_77 /* MapError.swift */,
+				OBJ_78 /* Mappable.swift */,
+				OBJ_79 /* Mapper.swift */,
+				OBJ_80 /* NSDecimalNumberTransform.swift */,
+				OBJ_81 /* Operators.swift */,
+				OBJ_82 /* ToJSON.swift */,
+				OBJ_83 /* TransformOf.swift */,
+				OBJ_84 /* TransformOperators.swift */,
+				OBJ_85 /* TransformType.swift */,
+				OBJ_86 /* URLTransform.swift */,
+			);
+			name = "ObjectMapper 4.2.0";
+			path = .build/checkouts/ObjectMapper/Sources;
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -722,64 +739,57 @@
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_74 /* ObjectMapper 4.2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_75 /* Package.swift */,
-				OBJ_76 /* CodableTransform.swift */,
-				OBJ_77 /* CustomDateFormatTransform.swift */,
-				OBJ_78 /* DataTransform.swift */,
-				OBJ_79 /* DateFormatterTransform.swift */,
-				OBJ_80 /* DateTransform.swift */,
-				OBJ_81 /* DictionaryTransform.swift */,
-				OBJ_82 /* EnumOperators.swift */,
-				OBJ_83 /* EnumTransform.swift */,
-				OBJ_84 /* FromJSON.swift */,
-				OBJ_85 /* HexColorTransform.swift */,
-				OBJ_86 /* ISO8601DateTransform.swift */,
-				OBJ_87 /* ImmutableMappable.swift */,
-				OBJ_88 /* IntegerOperators.swift */,
-				OBJ_89 /* Map.swift */,
-				OBJ_90 /* MapError.swift */,
-				OBJ_91 /* Mappable.swift */,
-				OBJ_92 /* Mapper.swift */,
-				OBJ_93 /* NSDecimalNumberTransform.swift */,
-				OBJ_94 /* Operators.swift */,
-				OBJ_95 /* ToJSON.swift */,
-				OBJ_96 /* TransformOf.swift */,
-				OBJ_97 /* TransformOperators.swift */,
-				OBJ_98 /* TransformType.swift */,
-				OBJ_99 /* URLTransform.swift */,
-			);
-			name = "ObjectMapper 4.2.0";
-			path = .build/checkouts/ObjectMapper/Sources;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_8 /* PayseraParcelSDK */ = {
 			isa = PBXGroup;
 			children = (
-				746D5C292626BA8F00E3BD48 /* Services */,
 				OBJ_9 /* Entities */,
+				OBJ_27 /* Services */,
 			);
 			name = PayseraParcelSDK;
 			path = Sources/PayseraParcelSDK;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_87 /* PromiseKit 6.13.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_88 /* Package.swift */,
+				OBJ_89 /* Box.swift */,
+				OBJ_90 /* Catchable.swift */,
+				OBJ_91 /* Configuration.swift */,
+				OBJ_92 /* CustomStringConvertible.swift */,
+				OBJ_93 /* Error.swift */,
+				OBJ_94 /* Guarantee.swift */,
+				OBJ_95 /* LogEvent.swift */,
+				OBJ_96 /* Promise.swift */,
+				OBJ_97 /* Resolver.swift */,
+				OBJ_98 /* Thenable.swift */,
+				OBJ_99 /* after.swift */,
+				OBJ_100 /* firstly.swift */,
+				OBJ_101 /* hang.swift */,
+				OBJ_102 /* race.swift */,
+				OBJ_103 /* when.swift */,
+			);
+			name = "PromiseKit 6.13.3";
+			path = .build/checkouts/PromiseKit/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				746D5CAF2626C1A300E3BD48 /* Filter */,
-				746D5C482626BBB000E3BD48 /* Request */,
-				OBJ_10 /* PSTerminal.swift */,
-				746D5ADE2626ACE200E3BD48 /* PSParcelCountry.swift */,
-				746D5AEE2626AD5300E3BD48 /* PSCourierCompany.swift */,
-				746D5B0C2626AE2200E3BD48 /* PSStatusChange.swift */,
-				746D5B382626AEE400E3BD48 /* PSParcel.swift */,
-				746D5B732626B0B500E3BD48 /* PSParcelPayment.swift */,
-				746D5BAB2626B4DA00E3BD48 /* PSSizeCount.swift */,
-				746D5BC92626B52E00E3BD48 /* PSSize.swift */,
-				746D5BD92626B5A600E3BD48 /* PSParcelUser.swift */,
-				746D5D322626D8D800E3BD48 /* PSAuthorizationResult.swift */,
+				OBJ_23 /* Request */,
+				OBJ_10 /* Filter */,
+				OBJ_13 /* PSAuthorizationResult.swift */,
+				OBJ_14 /* PSCourierCompany.swift */,
+				OBJ_15 /* PSParcel.swift */,
+				OBJ_16 /* PSParcelCountry.swift */,
+				OBJ_17 /* PSParcelPayment.swift */,
+				OBJ_18 /* PSParcelUser.swift */,
+				OBJ_19 /* PSSize.swift */,
+				OBJ_20 /* PSSizeCount.swift */,
+				OBJ_21 /* PSStatusChange.swift */,
+				OBJ_22 /* PSTerminal.swift */,
+				746A2762262FECEE008C8C4E /* PSParcelStatus.swift */,
+				746A278E262FED65008C8C4E /* PSParcelPaymentStatus.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -789,10 +799,10 @@
 /* Begin PBXNativeTarget section */
 		"Alamofire::Alamofire" /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_138 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = OBJ_162 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				OBJ_141 /* Sources */,
-				OBJ_177 /* Frameworks */,
+				OBJ_165 /* Sources */,
+				OBJ_201 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -805,9 +815,9 @@
 		};
 		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_179 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildConfigurationList = OBJ_203 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
 			buildPhases = (
-				OBJ_182 /* Sources */,
+				OBJ_206 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -819,10 +829,10 @@
 		};
 		"JWTDecode::JWTDecode" /* JWTDecode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_185 /* Build configuration list for PBXNativeTarget "JWTDecode" */;
+			buildConfigurationList = OBJ_209 /* Build configuration list for PBXNativeTarget "JWTDecode" */;
 			buildPhases = (
-				OBJ_188 /* Sources */,
-				OBJ_196 /* Frameworks */,
+				OBJ_212 /* Sources */,
+				OBJ_220 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -835,9 +845,9 @@
 		};
 		"JWTDecode::SwiftPMPackageDescription" /* JWTDecodePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_198 /* Build configuration list for PBXNativeTarget "JWTDecodePackageDescription" */;
+			buildConfigurationList = OBJ_222 /* Build configuration list for PBXNativeTarget "JWTDecodePackageDescription" */;
 			buildPhases = (
-				OBJ_201 /* Sources */,
+				OBJ_225 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -849,10 +859,10 @@
 		};
 		"ObjectMapper::ObjectMapper" /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_204 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildConfigurationList = OBJ_228 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
 			buildPhases = (
-				OBJ_207 /* Sources */,
-				OBJ_232 /* Frameworks */,
+				OBJ_231 /* Sources */,
+				OBJ_256 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -865,9 +875,9 @@
 		};
 		"ObjectMapper::SwiftPMPackageDescription" /* ObjectMapperPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_234 /* Build configuration list for PBXNativeTarget "ObjectMapperPackageDescription" */;
+			buildConfigurationList = OBJ_258 /* Build configuration list for PBXNativeTarget "ObjectMapperPackageDescription" */;
 			buildPhases = (
-				OBJ_237 /* Sources */,
+				OBJ_261 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -879,18 +889,18 @@
 		};
 		"PayseraCommonSDK::PayseraCommonSDK" /* PayseraCommonSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_240 /* Build configuration list for PBXNativeTarget "PayseraCommonSDK" */;
+			buildConfigurationList = OBJ_264 /* Build configuration list for PBXNativeTarget "PayseraCommonSDK" */;
 			buildPhases = (
-				OBJ_243 /* Sources */,
-				OBJ_259 /* Frameworks */,
+				OBJ_267 /* Sources */,
+				OBJ_283 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_264 /* PBXTargetDependency */,
-				OBJ_265 /* PBXTargetDependency */,
-				OBJ_266 /* PBXTargetDependency */,
-				OBJ_268 /* PBXTargetDependency */,
+				OBJ_288 /* PBXTargetDependency */,
+				OBJ_289 /* PBXTargetDependency */,
+				OBJ_290 /* PBXTargetDependency */,
+				OBJ_292 /* PBXTargetDependency */,
 			);
 			name = PayseraCommonSDK;
 			productName = PayseraCommonSDK;
@@ -899,9 +909,9 @@
 		};
 		"PayseraCommonSDK::SwiftPMPackageDescription" /* PayseraCommonSDKPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_270 /* Build configuration list for PBXNativeTarget "PayseraCommonSDKPackageDescription" */;
+			buildConfigurationList = OBJ_294 /* Build configuration list for PBXNativeTarget "PayseraCommonSDKPackageDescription" */;
 			buildPhases = (
-				OBJ_273 /* Sources */,
+				OBJ_297 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -913,19 +923,19 @@
 		};
 		"PayseraParcelSDK::PayseraParcelSDK" /* PayseraParcelSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_276 /* Build configuration list for PBXNativeTarget "PayseraParcelSDK" */;
+			buildConfigurationList = OBJ_300 /* Build configuration list for PBXNativeTarget "PayseraParcelSDK" */;
 			buildPhases = (
-				OBJ_279 /* Sources */,
-				OBJ_281 /* Frameworks */,
+				OBJ_303 /* Sources */,
+				OBJ_323 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_287 /* PBXTargetDependency */,
-				OBJ_288 /* PBXTargetDependency */,
-				OBJ_289 /* PBXTargetDependency */,
-				OBJ_290 /* PBXTargetDependency */,
-				OBJ_291 /* PBXTargetDependency */,
+				OBJ_329 /* PBXTargetDependency */,
+				OBJ_330 /* PBXTargetDependency */,
+				OBJ_331 /* PBXTargetDependency */,
+				OBJ_332 /* PBXTargetDependency */,
+				OBJ_333 /* PBXTargetDependency */,
 			);
 			name = PayseraParcelSDK;
 			productName = PayseraParcelSDK;
@@ -934,20 +944,20 @@
 		};
 		"PayseraParcelSDK::PayseraParcelSDKTests" /* PayseraParcelSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_304 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKTests" */;
+			buildConfigurationList = OBJ_346 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKTests" */;
 			buildPhases = (
-				OBJ_307 /* Sources */,
-				OBJ_310 /* Frameworks */,
+				OBJ_349 /* Sources */,
+				OBJ_354 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_317 /* PBXTargetDependency */,
-				OBJ_318 /* PBXTargetDependency */,
-				OBJ_319 /* PBXTargetDependency */,
-				OBJ_320 /* PBXTargetDependency */,
-				OBJ_321 /* PBXTargetDependency */,
-				OBJ_322 /* PBXTargetDependency */,
+				OBJ_361 /* PBXTargetDependency */,
+				OBJ_362 /* PBXTargetDependency */,
+				OBJ_363 /* PBXTargetDependency */,
+				OBJ_364 /* PBXTargetDependency */,
+				OBJ_365 /* PBXTargetDependency */,
+				OBJ_366 /* PBXTargetDependency */,
 			);
 			name = PayseraParcelSDKTests;
 			productName = PayseraParcelSDKTests;
@@ -956,9 +966,9 @@
 		};
 		"PayseraParcelSDK::SwiftPMPackageDescription" /* PayseraParcelSDKPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_293 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKPackageDescription" */;
+			buildConfigurationList = OBJ_335 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKPackageDescription" */;
 			buildPhases = (
-				OBJ_296 /* Sources */,
+				OBJ_338 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -970,10 +980,10 @@
 		};
 		"PromiseKit::PromiseKit" /* PromiseKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_323 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildConfigurationList = OBJ_367 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
 			buildPhases = (
-				OBJ_326 /* Sources */,
-				OBJ_342 /* Frameworks */,
+				OBJ_370 /* Sources */,
+				OBJ_386 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -986,9 +996,9 @@
 		};
 		"PromiseKit::SwiftPMPackageDescription" /* PromiseKitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_344 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */;
+			buildConfigurationList = OBJ_388 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */;
 			buildPhases = (
-				OBJ_347 /* Sources */,
+				OBJ_391 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -1014,8 +1024,8 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_127 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_151 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1038,307 +1048,310 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_141 /* Sources */ = {
+		OBJ_165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_142 /* AFError.swift in Sources */,
-				OBJ_143 /* Alamofire.swift in Sources */,
-				OBJ_144 /* AlamofireExtended.swift in Sources */,
-				OBJ_145 /* AuthenticationInterceptor.swift in Sources */,
-				OBJ_146 /* CachedResponseHandler.swift in Sources */,
-				OBJ_147 /* Combine.swift in Sources */,
-				OBJ_148 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_149 /* EventMonitor.swift in Sources */,
-				OBJ_150 /* HTTPHeaders.swift in Sources */,
-				OBJ_151 /* HTTPMethod.swift in Sources */,
-				OBJ_152 /* MultipartFormData.swift in Sources */,
-				OBJ_153 /* MultipartUpload.swift in Sources */,
-				OBJ_154 /* NetworkReachabilityManager.swift in Sources */,
-				OBJ_155 /* Notifications.swift in Sources */,
-				OBJ_156 /* OperationQueue+Alamofire.swift in Sources */,
-				OBJ_157 /* ParameterEncoder.swift in Sources */,
-				OBJ_158 /* ParameterEncoding.swift in Sources */,
-				OBJ_159 /* Protected.swift in Sources */,
-				OBJ_160 /* RedirectHandler.swift in Sources */,
-				OBJ_161 /* Request.swift in Sources */,
-				OBJ_162 /* RequestInterceptor.swift in Sources */,
-				OBJ_163 /* RequestTaskMap.swift in Sources */,
-				OBJ_164 /* Response.swift in Sources */,
-				OBJ_165 /* ResponseSerialization.swift in Sources */,
-				OBJ_166 /* Result+Alamofire.swift in Sources */,
-				OBJ_167 /* RetryPolicy.swift in Sources */,
-				OBJ_168 /* ServerTrustEvaluation.swift in Sources */,
-				OBJ_169 /* Session.swift in Sources */,
-				OBJ_170 /* SessionDelegate.swift in Sources */,
-				OBJ_171 /* StringEncoding+Alamofire.swift in Sources */,
-				OBJ_172 /* URLConvertible+URLRequestConvertible.swift in Sources */,
-				OBJ_173 /* URLEncodedFormEncoder.swift in Sources */,
-				OBJ_174 /* URLRequest+Alamofire.swift in Sources */,
-				OBJ_175 /* URLSessionConfiguration+Alamofire.swift in Sources */,
-				OBJ_176 /* Validation.swift in Sources */,
+				OBJ_166 /* AFError.swift in Sources */,
+				OBJ_167 /* Alamofire.swift in Sources */,
+				OBJ_168 /* AlamofireExtended.swift in Sources */,
+				OBJ_169 /* AuthenticationInterceptor.swift in Sources */,
+				OBJ_170 /* CachedResponseHandler.swift in Sources */,
+				OBJ_171 /* Combine.swift in Sources */,
+				OBJ_172 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_173 /* EventMonitor.swift in Sources */,
+				OBJ_174 /* HTTPHeaders.swift in Sources */,
+				OBJ_175 /* HTTPMethod.swift in Sources */,
+				OBJ_176 /* MultipartFormData.swift in Sources */,
+				OBJ_177 /* MultipartUpload.swift in Sources */,
+				OBJ_178 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_179 /* Notifications.swift in Sources */,
+				OBJ_180 /* OperationQueue+Alamofire.swift in Sources */,
+				OBJ_181 /* ParameterEncoder.swift in Sources */,
+				OBJ_182 /* ParameterEncoding.swift in Sources */,
+				OBJ_183 /* Protected.swift in Sources */,
+				OBJ_184 /* RedirectHandler.swift in Sources */,
+				OBJ_185 /* Request.swift in Sources */,
+				OBJ_186 /* RequestInterceptor.swift in Sources */,
+				OBJ_187 /* RequestTaskMap.swift in Sources */,
+				OBJ_188 /* Response.swift in Sources */,
+				OBJ_189 /* ResponseSerialization.swift in Sources */,
+				OBJ_190 /* Result+Alamofire.swift in Sources */,
+				OBJ_191 /* RetryPolicy.swift in Sources */,
+				OBJ_192 /* ServerTrustEvaluation.swift in Sources */,
+				OBJ_193 /* Session.swift in Sources */,
+				OBJ_194 /* SessionDelegate.swift in Sources */,
+				OBJ_195 /* StringEncoding+Alamofire.swift in Sources */,
+				OBJ_196 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				OBJ_197 /* URLEncodedFormEncoder.swift in Sources */,
+				OBJ_198 /* URLRequest+Alamofire.swift in Sources */,
+				OBJ_199 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				OBJ_200 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_182 /* Sources */ = {
+		OBJ_206 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_183 /* Package.swift in Sources */,
+				OBJ_207 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_188 /* Sources */ = {
+		OBJ_212 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_189 /* A0JWT.swift in Sources */,
-				OBJ_190 /* Errors.swift in Sources */,
-				OBJ_191 /* JWT.swift in Sources */,
-				OBJ_192 /* JWTDecode.swift in Sources */,
-				OBJ_193 /* TokenValidators.swift in Sources */,
-				OBJ_194 /* ValidationError.swift in Sources */,
-				OBJ_195 /* ValidatorJWT.swift in Sources */,
+				OBJ_213 /* A0JWT.swift in Sources */,
+				OBJ_214 /* Errors.swift in Sources */,
+				OBJ_215 /* JWT.swift in Sources */,
+				OBJ_216 /* JWTDecode.swift in Sources */,
+				OBJ_217 /* TokenValidators.swift in Sources */,
+				OBJ_218 /* ValidationError.swift in Sources */,
+				OBJ_219 /* ValidatorJWT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_201 /* Sources */ = {
+		OBJ_225 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_202 /* Package.swift in Sources */,
+				OBJ_226 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_207 /* Sources */ = {
+		OBJ_231 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_208 /* CodableTransform.swift in Sources */,
-				OBJ_209 /* CustomDateFormatTransform.swift in Sources */,
-				OBJ_210 /* DataTransform.swift in Sources */,
-				OBJ_211 /* DateFormatterTransform.swift in Sources */,
-				OBJ_212 /* DateTransform.swift in Sources */,
-				OBJ_213 /* DictionaryTransform.swift in Sources */,
-				OBJ_214 /* EnumOperators.swift in Sources */,
-				OBJ_215 /* EnumTransform.swift in Sources */,
-				OBJ_216 /* FromJSON.swift in Sources */,
-				OBJ_217 /* HexColorTransform.swift in Sources */,
-				OBJ_218 /* ISO8601DateTransform.swift in Sources */,
-				OBJ_219 /* ImmutableMappable.swift in Sources */,
-				OBJ_220 /* IntegerOperators.swift in Sources */,
-				OBJ_221 /* Map.swift in Sources */,
-				OBJ_222 /* MapError.swift in Sources */,
-				OBJ_223 /* Mappable.swift in Sources */,
-				OBJ_224 /* Mapper.swift in Sources */,
-				OBJ_225 /* NSDecimalNumberTransform.swift in Sources */,
-				OBJ_226 /* Operators.swift in Sources */,
-				OBJ_227 /* ToJSON.swift in Sources */,
-				OBJ_228 /* TransformOf.swift in Sources */,
-				OBJ_229 /* TransformOperators.swift in Sources */,
-				OBJ_230 /* TransformType.swift in Sources */,
-				OBJ_231 /* URLTransform.swift in Sources */,
+				OBJ_232 /* CodableTransform.swift in Sources */,
+				OBJ_233 /* CustomDateFormatTransform.swift in Sources */,
+				OBJ_234 /* DataTransform.swift in Sources */,
+				OBJ_235 /* DateFormatterTransform.swift in Sources */,
+				OBJ_236 /* DateTransform.swift in Sources */,
+				OBJ_237 /* DictionaryTransform.swift in Sources */,
+				OBJ_238 /* EnumOperators.swift in Sources */,
+				OBJ_239 /* EnumTransform.swift in Sources */,
+				OBJ_240 /* FromJSON.swift in Sources */,
+				OBJ_241 /* HexColorTransform.swift in Sources */,
+				OBJ_242 /* ISO8601DateTransform.swift in Sources */,
+				OBJ_243 /* ImmutableMappable.swift in Sources */,
+				OBJ_244 /* IntegerOperators.swift in Sources */,
+				OBJ_245 /* Map.swift in Sources */,
+				OBJ_246 /* MapError.swift in Sources */,
+				OBJ_247 /* Mappable.swift in Sources */,
+				OBJ_248 /* Mapper.swift in Sources */,
+				OBJ_249 /* NSDecimalNumberTransform.swift in Sources */,
+				OBJ_250 /* Operators.swift in Sources */,
+				OBJ_251 /* ToJSON.swift in Sources */,
+				OBJ_252 /* TransformOf.swift in Sources */,
+				OBJ_253 /* TransformOperators.swift in Sources */,
+				OBJ_254 /* TransformType.swift in Sources */,
+				OBJ_255 /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_237 /* Sources */ = {
+		OBJ_261 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_238 /* Package.swift in Sources */,
+				OBJ_262 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_243 /* Sources */ = {
+		OBJ_267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_244 /* PSApiError.swift in Sources */,
-				OBJ_245 /* PSApiJWTCredentials.swift in Sources */,
-				OBJ_246 /* PSApiRequest.swift in Sources */,
-				OBJ_247 /* PSBaseFilter.swift in Sources */,
-				OBJ_248 /* PSCursors.swift in Sources */,
-				OBJ_249 /* PSMetadata.swift in Sources */,
-				OBJ_250 /* PSMetadataAwareResponse.swift in Sources */,
-				OBJ_251 /* PSMoney.swift in Sources */,
-				OBJ_252 /* PSRequestHeaders.swift in Sources */,
-				OBJ_253 /* PSURLRequestHeader.swift in Sources */,
-				OBJ_254 /* PSLoggerProtocol.swift in Sources */,
-				OBJ_255 /* PSTokenRefresherProtocol.swift in Sources */,
-				OBJ_256 /* PSBaseApiClient.swift in Sources */,
-				OBJ_257 /* PSRequestAdapter.swift in Sources */,
-				OBJ_258 /* PSTrustedSession.swift in Sources */,
+				OBJ_268 /* PSApiError.swift in Sources */,
+				OBJ_269 /* PSApiJWTCredentials.swift in Sources */,
+				OBJ_270 /* PSApiRequest.swift in Sources */,
+				OBJ_271 /* PSBaseFilter.swift in Sources */,
+				OBJ_272 /* PSCursors.swift in Sources */,
+				OBJ_273 /* PSMetadata.swift in Sources */,
+				OBJ_274 /* PSMetadataAwareResponse.swift in Sources */,
+				OBJ_275 /* PSMoney.swift in Sources */,
+				OBJ_276 /* PSRequestHeaders.swift in Sources */,
+				OBJ_277 /* PSURLRequestHeader.swift in Sources */,
+				OBJ_278 /* PSLoggerProtocol.swift in Sources */,
+				OBJ_279 /* PSTokenRefresherProtocol.swift in Sources */,
+				OBJ_280 /* PSBaseApiClient.swift in Sources */,
+				OBJ_281 /* PSRequestAdapter.swift in Sources */,
+				OBJ_282 /* PSTrustedSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_273 /* Sources */ = {
+		OBJ_297 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_274 /* Package.swift in Sources */,
+				OBJ_298 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_279 /* Sources */ = {
+		OBJ_303 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				746D5D152626D72F00E3BD48 /* ParcelAPIClient.swift in Sources */,
-				746D5B392626AEE400E3BD48 /* PSParcel.swift in Sources */,
-				746D5D332626D8D800E3BD48 /* PSAuthorizationResult.swift in Sources */,
-				OBJ_280 /* PSTerminal.swift in Sources */,
-				746D5BDA2626B5A600E3BD48 /* PSParcelUser.swift in Sources */,
-				746D5B9C2626B43A00E3BD48 /* PSParcelRegistrationRequest.swift in Sources */,
-				746D5B0D2626AE2200E3BD48 /* PSStatusChange.swift in Sources */,
-				746D5AEF2626AD5300E3BD48 /* PSCourierCompany.swift in Sources */,
-				746D5C4A2626BBEA00E3BD48 /* PSUserUpdateRequest.swift in Sources */,
-				746D5BAC2626B4DA00E3BD48 /* PSSizeCount.swift in Sources */,
-				746D5B742626B0B500E3BD48 /* PSParcelPayment.swift in Sources */,
-				746D5CDF2626C6C800E3BD48 /* PSParcelPriceFilter.swift in Sources */,
-				746D5ADF2626ACE200E3BD48 /* PSParcelCountry.swift in Sources */,
-				746D5D692626E3A100E3BD48 /* ParcelAPIClientFactory.swift in Sources */,
-				746D5C762626BDB000E3BD48 /* PSParcelLoginRequest.swift in Sources */,
-				746D5C2B2626BAA000E3BD48 /* ParcelAPIRequestRouter.swift in Sources */,
-				746D5CB12626C1B100E3BD48 /* PSTerminalFilter.swift in Sources */,
-				746D5BCA2626B52E00E3BD48 /* PSSize.swift in Sources */,
+				OBJ_304 /* PSParcelPriceFilter.swift in Sources */,
+				OBJ_305 /* PSTerminalFilter.swift in Sources */,
+				OBJ_306 /* PSAuthorizationResult.swift in Sources */,
+				OBJ_307 /* PSCourierCompany.swift in Sources */,
+				OBJ_308 /* PSParcel.swift in Sources */,
+				746A2763262FECEE008C8C4E /* PSParcelStatus.swift in Sources */,
+				OBJ_309 /* PSParcelCountry.swift in Sources */,
+				OBJ_310 /* PSParcelPayment.swift in Sources */,
+				OBJ_311 /* PSParcelUser.swift in Sources */,
+				OBJ_312 /* PSSize.swift in Sources */,
+				OBJ_313 /* PSSizeCount.swift in Sources */,
+				OBJ_314 /* PSStatusChange.swift in Sources */,
+				OBJ_315 /* PSTerminal.swift in Sources */,
+				OBJ_316 /* PSParcelLoginRequest.swift in Sources */,
+				OBJ_317 /* PSParcelRegistrationRequest.swift in Sources */,
+				OBJ_318 /* PSUserUpdateRequest.swift in Sources */,
+				OBJ_319 /* ParcelAPIClient.swift in Sources */,
+				OBJ_320 /* ParcelAPIClientFactory.swift in Sources */,
+				746A278F262FED65008C8C4E /* PSParcelPaymentStatus.swift in Sources */,
+				OBJ_321 /* ParcelAPIRequestRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_296 /* Sources */ = {
+		OBJ_338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_297 /* Package.swift in Sources */,
+				OBJ_339 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_307 /* Sources */ = {
+		OBJ_349 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_308 /* PayseraParcelSDKTests.swift in Sources */,
-				744737592627257E005A0A5E /* XCTestCase+Helper.swift in Sources */,
-				OBJ_309 /* XCTestManifests.swift in Sources */,
+				OBJ_350 /* MockFactory.swift in Sources */,
+				OBJ_351 /* PayseraParcelSDKTests.swift in Sources */,
+				OBJ_352 /* XCTestCase+Helper.swift in Sources */,
+				OBJ_353 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_326 /* Sources */ = {
+		OBJ_370 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_327 /* Box.swift in Sources */,
-				OBJ_328 /* Catchable.swift in Sources */,
-				OBJ_329 /* Configuration.swift in Sources */,
-				OBJ_330 /* CustomStringConvertible.swift in Sources */,
-				OBJ_331 /* Error.swift in Sources */,
-				OBJ_332 /* Guarantee.swift in Sources */,
-				OBJ_333 /* LogEvent.swift in Sources */,
-				OBJ_334 /* Promise.swift in Sources */,
-				OBJ_335 /* Resolver.swift in Sources */,
-				OBJ_336 /* Thenable.swift in Sources */,
-				OBJ_337 /* after.swift in Sources */,
-				OBJ_338 /* firstly.swift in Sources */,
-				OBJ_339 /* hang.swift in Sources */,
-				OBJ_340 /* race.swift in Sources */,
-				OBJ_341 /* when.swift in Sources */,
+				OBJ_371 /* Box.swift in Sources */,
+				OBJ_372 /* Catchable.swift in Sources */,
+				OBJ_373 /* Configuration.swift in Sources */,
+				OBJ_374 /* CustomStringConvertible.swift in Sources */,
+				OBJ_375 /* Error.swift in Sources */,
+				OBJ_376 /* Guarantee.swift in Sources */,
+				OBJ_377 /* LogEvent.swift in Sources */,
+				OBJ_378 /* Promise.swift in Sources */,
+				OBJ_379 /* Resolver.swift in Sources */,
+				OBJ_380 /* Thenable.swift in Sources */,
+				OBJ_381 /* after.swift in Sources */,
+				OBJ_382 /* firstly.swift in Sources */,
+				OBJ_383 /* hang.swift in Sources */,
+				OBJ_384 /* race.swift in Sources */,
+				OBJ_385 /* when.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_347 /* Sources */ = {
+		OBJ_391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_348 /* Package.swift in Sources */,
+				OBJ_392 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_264 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "JWTDecode::JWTDecode" /* JWTDecode */;
-			targetProxy = 746D5AC12626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_265 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "ObjectMapper::ObjectMapper" /* ObjectMapper */;
-			targetProxy = 746D5AC22626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_266 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "PromiseKit::PromiseKit" /* PromiseKit */;
-			targetProxy = 746D5AC32626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_268 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 746D5AC42626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_287 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "PayseraCommonSDK::PayseraCommonSDK" /* PayseraCommonSDK */;
-			targetProxy = 746D5AC02626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
 		OBJ_288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "JWTDecode::JWTDecode" /* JWTDecode */;
-			targetProxy = 746D5AC52626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A2719262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
 		OBJ_289 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ObjectMapper::ObjectMapper" /* ObjectMapper */;
-			targetProxy = 746D5AC62626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271A262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
 		OBJ_290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PromiseKit::PromiseKit" /* PromiseKit */;
-			targetProxy = 746D5AC72626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271B262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_291 /* PBXTargetDependency */ = {
+		OBJ_292 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 746D5AC82626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271C262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_302 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "PayseraParcelSDK::PayseraParcelSDKTests" /* PayseraParcelSDKTests */;
-			targetProxy = 746D5AD92626A9CA00E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_317 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "PayseraParcelSDK::PayseraParcelSDK" /* PayseraParcelSDK */;
-			targetProxy = 746D5AC92626A9C900E3BD48 /* PBXContainerItemProxy */;
-		};
-		OBJ_318 /* PBXTargetDependency */ = {
+		OBJ_329 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PayseraCommonSDK::PayseraCommonSDK" /* PayseraCommonSDK */;
-			targetProxy = 746D5ACA2626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A2718262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_319 /* PBXTargetDependency */ = {
+		OBJ_330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "JWTDecode::JWTDecode" /* JWTDecode */;
-			targetProxy = 746D5ACB2626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271D262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_320 /* PBXTargetDependency */ = {
+		OBJ_331 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ObjectMapper::ObjectMapper" /* ObjectMapper */;
-			targetProxy = 746D5ACC2626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271E262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_321 /* PBXTargetDependency */ = {
+		OBJ_332 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PromiseKit::PromiseKit" /* PromiseKit */;
-			targetProxy = 746D5ACD2626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A271F262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
-		OBJ_322 /* PBXTargetDependency */ = {
+		OBJ_333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 746D5ACE2626A9C900E3BD48 /* PBXContainerItemProxy */;
+			targetProxy = 746A2720262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PayseraParcelSDK::PayseraParcelSDKTests" /* PayseraParcelSDKTests */;
+			targetProxy = 746A2731262FEC23008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PayseraParcelSDK::PayseraParcelSDK" /* PayseraParcelSDK */;
+			targetProxy = 746A2721262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PayseraCommonSDK::PayseraCommonSDK" /* PayseraCommonSDK */;
+			targetProxy = 746A2722262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "JWTDecode::JWTDecode" /* JWTDecode */;
+			targetProxy = 746A2723262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ObjectMapper::ObjectMapper" /* ObjectMapper */;
+			targetProxy = 746A2724262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PromiseKit::PromiseKit" /* PromiseKit */;
+			targetProxy = 746A2725262FEC22008C8C4E /* PBXContainerItemProxy */;
+		};
+		OBJ_366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = 746A2726262FEC22008C8C4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_139 /* Debug */ = {
+		OBJ_163 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1370,7 +1383,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_140 /* Release */ = {
+		OBJ_164 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1402,7 +1415,7 @@
 			};
 			name = Release;
 		};
-		OBJ_180 /* Debug */ = {
+		OBJ_204 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1411,7 +1424,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_181 /* Release */ = {
+		OBJ_205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1420,7 +1433,7 @@
 			};
 			name = Release;
 		};
-		OBJ_186 /* Debug */ = {
+		OBJ_210 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1448,7 +1461,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_187 /* Release */ = {
+		OBJ_211 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1476,7 +1489,7 @@
 			};
 			name = Release;
 		};
-		OBJ_199 /* Debug */ = {
+		OBJ_223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1485,7 +1498,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_200 /* Release */ = {
+		OBJ_224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1494,7 +1507,7 @@
 			};
 			name = Release;
 		};
-		OBJ_205 /* Debug */ = {
+		OBJ_229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1522,7 +1535,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_206 /* Release */ = {
+		OBJ_230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1550,7 +1563,7 @@
 			};
 			name = Release;
 		};
-		OBJ_235 /* Debug */ = {
+		OBJ_259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1559,7 +1572,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_236 /* Release */ = {
+		OBJ_260 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1568,7 +1581,7 @@
 			};
 			name = Release;
 		};
-		OBJ_241 /* Debug */ = {
+		OBJ_265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1596,7 +1609,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_242 /* Release */ = {
+		OBJ_266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1624,7 +1637,7 @@
 			};
 			name = Release;
 		};
-		OBJ_271 /* Debug */ = {
+		OBJ_295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1633,81 +1646,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_272 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_277 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PayseraParcelSDK.xcodeproj/PayseraParcelSDK_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = PayseraParcelSDK;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = PayseraParcelSDK;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_278 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PayseraParcelSDK.xcodeproj/PayseraParcelSDK_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = PayseraParcelSDK;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = PayseraParcelSDK;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_294 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_295 /* Release */ = {
+		OBJ_296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1743,19 +1682,93 @@
 			};
 			name = Debug;
 		};
-		OBJ_300 /* Debug */ = {
+		OBJ_301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PayseraParcelSDK.xcodeproj/PayseraParcelSDK_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PayseraParcelSDK;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PayseraParcelSDK;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PayseraParcelSDK.xcodeproj/PayseraParcelSDK_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PayseraParcelSDK;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PayseraParcelSDK;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_301 /* Release */ = {
+		OBJ_343 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_305 /* Debug */ = {
+		OBJ_347 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1780,7 +1793,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_306 /* Release */ = {
+		OBJ_348 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1805,7 +1818,7 @@
 			};
 			name = Release;
 		};
-		OBJ_324 /* Debug */ = {
+		OBJ_368 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1833,7 +1846,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_325 /* Release */ = {
+		OBJ_369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1861,7 +1874,7 @@
 			};
 			name = Release;
 		};
-		OBJ_345 /* Debug */ = {
+		OBJ_389 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1870,7 +1883,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_346 /* Release */ = {
+		OBJ_390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1906,38 +1919,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_138 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		OBJ_162 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_139 /* Debug */,
-				OBJ_140 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_179 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_180 /* Debug */,
-				OBJ_181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_185 /* Build configuration list for PBXNativeTarget "JWTDecode" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_186 /* Debug */,
-				OBJ_187 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_198 /* Build configuration list for PBXNativeTarget "JWTDecodePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_199 /* Debug */,
-				OBJ_200 /* Release */,
+				OBJ_163 /* Debug */,
+				OBJ_164 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1951,92 +1937,119 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_204 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+		OBJ_203 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_205 /* Debug */,
-				OBJ_206 /* Release */,
+				OBJ_204 /* Debug */,
+				OBJ_205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_234 /* Build configuration list for PBXNativeTarget "ObjectMapperPackageDescription" */ = {
+		OBJ_209 /* Build configuration list for PBXNativeTarget "JWTDecode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_235 /* Debug */,
-				OBJ_236 /* Release */,
+				OBJ_210 /* Debug */,
+				OBJ_211 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_240 /* Build configuration list for PBXNativeTarget "PayseraCommonSDK" */ = {
+		OBJ_222 /* Build configuration list for PBXNativeTarget "JWTDecodePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_241 /* Debug */,
-				OBJ_242 /* Release */,
+				OBJ_223 /* Debug */,
+				OBJ_224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_270 /* Build configuration list for PBXNativeTarget "PayseraCommonSDKPackageDescription" */ = {
+		OBJ_228 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_271 /* Debug */,
-				OBJ_272 /* Release */,
+				OBJ_229 /* Debug */,
+				OBJ_230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_276 /* Build configuration list for PBXNativeTarget "PayseraParcelSDK" */ = {
+		OBJ_258 /* Build configuration list for PBXNativeTarget "ObjectMapperPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_277 /* Debug */,
-				OBJ_278 /* Release */,
+				OBJ_259 /* Debug */,
+				OBJ_260 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_293 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKPackageDescription" */ = {
+		OBJ_264 /* Build configuration list for PBXNativeTarget "PayseraCommonSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_294 /* Debug */,
-				OBJ_295 /* Release */,
+				OBJ_265 /* Debug */,
+				OBJ_266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_299 /* Build configuration list for PBXAggregateTarget "PayseraParcelSDKPackageTests" */ = {
+		OBJ_294 /* Build configuration list for PBXNativeTarget "PayseraCommonSDKPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_300 /* Debug */,
-				OBJ_301 /* Release */,
+				OBJ_295 /* Debug */,
+				OBJ_296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_304 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKTests" */ = {
+		OBJ_300 /* Build configuration list for PBXNativeTarget "PayseraParcelSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_305 /* Debug */,
-				OBJ_306 /* Release */,
+				OBJ_301 /* Debug */,
+				OBJ_302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_323 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+		OBJ_335 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_324 /* Debug */,
-				OBJ_325 /* Release */,
+				OBJ_336 /* Debug */,
+				OBJ_337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_344 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */ = {
+		OBJ_341 /* Build configuration list for PBXAggregateTarget "PayseraParcelSDKPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_345 /* Debug */,
-				OBJ_346 /* Release */,
+				OBJ_342 /* Debug */,
+				OBJ_343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_346 /* Build configuration list for PBXNativeTarget "PayseraParcelSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_347 /* Debug */,
+				OBJ_348 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_367 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_368 /* Debug */,
+				OBJ_369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_388 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_389 /* Debug */,
+				OBJ_390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

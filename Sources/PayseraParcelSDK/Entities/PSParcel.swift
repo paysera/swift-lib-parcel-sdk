@@ -2,14 +2,6 @@ import ObjectMapper
 import PayseraCommonSDK
 import Foundation
 
-public enum PSParcelStatus: String {
-    case pending
-    case paid
-    case transit
-    case delivered
-    case received
-}
-
 public final class PSParcel: Mappable {
     public var id: String?
     public var packageNumber: String?
@@ -28,11 +20,7 @@ public final class PSParcel: Mappable {
     public var paidAt: Date?
     public var createdAt: Date?
     public var updatedAt: Date?
-    var statusString: String?
-    
-    public var status: PSParcelStatus? {
-        PSParcelStatus(rawValue: statusString ?? "")
-    }
+    public var status: PSParcelStatus = .pending
     
     public init() { }
     
@@ -56,6 +44,6 @@ public final class PSParcel: Mappable {
         paidAt                  <- (map["paid_at"], DateTransform())
         createdAt               <- (map["created_at"], DateTransform())
         updatedAt               <- (map["updated_at"], DateTransform())
-        statusString            <- map["status"]
+        status                  <- (map["status"], PSParcelStatus.Transform())
     }
 }
