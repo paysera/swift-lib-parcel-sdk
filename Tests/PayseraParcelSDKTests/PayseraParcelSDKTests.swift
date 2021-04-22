@@ -7,10 +7,10 @@ import PromiseKit
 final class PayseraParcelSDKTests: XCTestCase {
     
     private lazy var parcelAPIClient: ParcelAPIClient = {
-        let token = "insert_me"
+        let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYXJjZWxfbmV0d29ya19hcGkiLCJpc3MiOiJhdXRoX2FwaSIsImV4cCI6MTYxOTAyNDI2MywianRpIjoiUGVUZnI3clNSYXNzVjR6dC1RRjZ3Z3VENGwxLVR3SFoiLCJwc3I6cyI6WyJsb2dnZWRfaW4iXSwicHNyOnUiOiI5NjQ4OTk0IiwicHNyOnNpZCI6Il9WX0w1bkFKaWhNMzVOMUE4RjhjdTR6djBCZzY4MGsyIiwicHNyOmEiOnsidXNlcl9pZCI6Ijk2NDg5OTQifSwiaWF0IjoxNjE4OTgxMDYzfQ.c7M5XiTqHcaQrvIREHcaHUnNJBCxCkqrHsqDREVEG8YRDXdEonVNtQcNsisRp37oWVgBvYNuWDbJVdpY02TRJmNbdT8zCWNu4ws0wnT8_Dzs_TV4wkA7drwCLMeHfCofXvsFjOhhLeACcTxxYAbhh0BW92T3YgcA7dsboX-gIoN0ufkYpdBDbK-6a7pxRHgrLCUpQr6fkGrOgoujoiFA0pppWYWOGP-Y_7pgjLvTo1jzs_jlQ-fsfn8ivYBlZbTwkDEm9Do3YwGP5QfQlodV3trUVYTHDIoIBbrFPTXPqsIa7IsZXYMjkWz2TdQl7-hQsKPlIC1X3cRR43ayb2J3Xw"
         
         let credentials = PSApiJWTCredentials()
-        //credentials.token = try! decode(jwt: "")
+        credentials.token = try! decode(jwt: token)
         return ParcelAPIClientFactory.createParcelAPIClient(credentials: credentials)
     }()
     
@@ -47,7 +47,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminal() {
-        let id = "insert_me"
+        let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
         
         executeNonNil(
             parcelAPIClient.getTerminal(id: id),
@@ -56,7 +56,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminalSizes() {
-        let id = "insert_me"
+        let id = "TesW6h3Pu0vGlgY3yypPWOXwx8CVRLil3"
         executeNonNil(
             parcelAPIClient.getTerminalSizesCount(id: id),
             description: "Terminal sizes must exist"
@@ -128,8 +128,8 @@ final class PayseraParcelSDKTests: XCTestCase {
     
     func testLogin() {
         let request = PSParcelLoginRequest()
-        request.username = "insert_me"
-        request.password = "insert_me"
+        request.username = "+639150594346"
+        request.password = "paysera123"
         executeNonNil(
             parcelAPIClient.login(payload: request),
             description: "User must be logged in"
@@ -138,9 +138,9 @@ final class PayseraParcelSDKTests: XCTestCase {
     
     func testRegisterUser() {
         let request = PSParcelRegistrationRequest()
-        request.name = "insert_me"
-        request.password = "insert_me"
-        request.phoneNumber = "insert_me"
+        request.name = "Marco Polo"
+        request.password = "paysera123"
+        request.phoneNumber = "+639150594346"
         executeNonNil(
             parcelAPIClient.registerUser(payload: request),
             description: "User must be registered"
@@ -148,7 +148,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testRegisterPayseraUser() {
-        let id = "insert_me"
+        let id = "9648994"
         executeNonNil(
             parcelAPIClient.registerPayseraUser(id: id),
             description: "Paysera User must be registered"
@@ -156,8 +156,8 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testVerifyCode() {
-        let userID = "insert_me"
-        let code = "insert_me"
+        let userID = "U5-8k5RNGFTMk3rgY7hmjfeCOfLy6PYu2"
+        let code = "608111"
         executeNonNil(
             parcelAPIClient.verifyCode(userID: userID, code: code),
             description: "Code must be verified"
@@ -165,7 +165,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testResendPhoneVerificationCode() {
-        let userID = "insert_me"
+        let userID = "UYD4N7oOGGPnz4HTCvyNBCn2jIeYCDbwI"
         executeNonNil(
             parcelAPIClient.resendPhoneVerificationCode(userID: userID),
             description: "Code must be resent"
@@ -173,8 +173,8 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testRegisterParcel() {
-        let parcel = PSParcel()
-        let payOnReceive = true //insert_me
+        let parcel = MockFactory.makeNewParcel()
+        let payOnReceive = false //insert_me
         executeNonNil(
             parcelAPIClient.registerParcel(payload: parcel, payOnReceive: payOnReceive),
             description: "Parcel must be registered"
@@ -183,6 +183,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     
     func testUpdateParcel() {
         let parcel = PSParcel()
+        parcel.id = "12asdasd"
         let payOnReceive = true //insert_me
         executeNonNil(
             parcelAPIClient.updateParcel(payload: parcel, payOnReceive: payOnReceive),
