@@ -124,9 +124,6 @@
 		OBJ_313 /* PSSizeCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* PSSizeCount.swift */; };
 		OBJ_314 /* PSStatusChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PSStatusChange.swift */; };
 		OBJ_315 /* PSTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* PSTerminal.swift */; };
-		OBJ_316 /* PSParcelLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PSParcelLoginRequest.swift */; };
-		OBJ_317 /* PSParcelRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PSParcelRegistrationRequest.swift */; };
-		OBJ_318 /* PSUserUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PSUserUpdateRequest.swift */; };
 		OBJ_319 /* ParcelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ParcelAPIClient.swift */; };
 		OBJ_320 /* ParcelAPIClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ParcelAPIClientFactory.swift */; };
 		OBJ_321 /* ParcelAPIRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ParcelAPIRequestRouter.swift */; };
@@ -346,9 +343,6 @@
 		OBJ_20 /* PSSizeCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSSizeCount.swift; sourceTree = "<group>"; };
 		OBJ_21 /* PSStatusChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSStatusChange.swift; sourceTree = "<group>"; };
 		OBJ_22 /* PSTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSTerminal.swift; sourceTree = "<group>"; };
-		OBJ_24 /* PSParcelLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelLoginRequest.swift; sourceTree = "<group>"; };
-		OBJ_25 /* PSParcelRegistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSParcelRegistrationRequest.swift; sourceTree = "<group>"; };
-		OBJ_26 /* PSUserUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSUserUpdateRequest.swift; sourceTree = "<group>"; };
 		OBJ_28 /* ParcelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClient.swift; sourceTree = "<group>"; };
 		OBJ_29 /* ParcelAPIClientFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIClientFactory.swift; sourceTree = "<group>"; };
 		OBJ_30 /* ParcelAPIRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelAPIRequestRouter.swift; sourceTree = "<group>"; };
@@ -576,16 +570,6 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_23 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_24 /* PSParcelLoginRequest.swift */,
-				OBJ_25 /* PSParcelRegistrationRequest.swift */,
-				OBJ_26 /* PSUserUpdateRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
 		OBJ_27 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,7 +649,7 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -676,7 +660,6 @@
 				OBJ_159 /* PayseraParcelSDK */,
 				OBJ_160 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Protocols */ = {
@@ -776,7 +759,6 @@
 		OBJ_9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Request */,
 				OBJ_10 /* Filter */,
 				OBJ_13 /* PSAuthorizationResult.swift */,
 				OBJ_14 /* PSCourierCompany.swift */,
@@ -1024,7 +1006,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_151 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1206,9 +1188,6 @@
 				OBJ_313 /* PSSizeCount.swift in Sources */,
 				OBJ_314 /* PSStatusChange.swift in Sources */,
 				OBJ_315 /* PSTerminal.swift in Sources */,
-				OBJ_316 /* PSParcelLoginRequest.swift in Sources */,
-				OBJ_317 /* PSParcelRegistrationRequest.swift in Sources */,
-				OBJ_318 /* PSUserUpdateRequest.swift in Sources */,
 				OBJ_319 /* ParcelAPIClient.swift in Sources */,
 				OBJ_320 /* ParcelAPIClientFactory.swift in Sources */,
 				746A278F262FED65008C8C4E /* PSParcelPaymentStatus.swift in Sources */,

@@ -14,29 +14,6 @@ final class PayseraParcelSDKTests: XCTestCase {
         return ParcelAPIClientFactory.createParcelAPIClient(credentials: credentials)
     }()
     
-    func testGetUser() {
-        executeNonNil(
-            parcelAPIClient.getUser(),
-            description: "User must exist"
-        )
-    }
-    
-    func testGetAuthorizationURL() {
-        executeNonNil(
-            parcelAPIClient.getAuthorizationURL(),
-            description: "Authorization URL must exist"
-        )
-    }
-    
-    func testGetCourierAuthentication() {
-        let code = "insert_me"
-        let state = "insert_me"
-        executeNonNil(
-            parcelAPIClient.getCourierAuthentication(code: code, state: state),
-            description: "CourierAuthentication URL must exist"
-        )
-    }
-    
     func testGetTerminals() {
         let filter = PSTerminalFilter()
         
@@ -110,68 +87,7 @@ final class PayseraParcelSDKTests: XCTestCase {
             description: "Cities must exist"
         )
     }
-    
-    func testUpdateUser() {
-        let request = PSUserUpdateRequest()
-        request.type = "insert_me"
-        request.phoneNumber = "insert_me"
-        request.email = "insert_me"
-        request.mainTerminalID = "insert_me"
-        request.oldPassword = "insert_me"
-        request.newPassword = "insert_me"
-        
-        executeNonNil(
-            parcelAPIClient.updateUser(payload: request),
-            description: "User must updated"
-        )
-    }
-    
-    func testLogin() {
-        let request = PSParcelLoginRequest()
-        request.username = "+639150594346"
-        request.password = "paysera123"
-        executeNonNil(
-            parcelAPIClient.login(payload: request),
-            description: "User must be logged in"
-        )
-    }
-    
-    func testRegisterUser() {
-        let request = PSParcelRegistrationRequest()
-        request.name = "Marco Polo"
-        request.password = "paysera123"
-        request.phoneNumber = "+639150594346"
-        executeNonNil(
-            parcelAPIClient.registerUser(payload: request),
-            description: "User must be registered"
-        )
-    }
-    
-    func testRegisterPayseraUser() {
-        let id = "9648994"
-        executeNonNil(
-            parcelAPIClient.registerPayseraUser(id: id),
-            description: "Paysera User must be registered"
-        )
-    }
-    
-    func testVerifyCode() {
-        let userID = "U5-8k5RNGFTMk3rgY7hmjfeCOfLy6PYu2"
-        let code = "608111"
-        executeNonNil(
-            parcelAPIClient.verifyCode(userID: userID, code: code),
-            description: "Code must be verified"
-        )
-    }
-    
-    func testResendPhoneVerificationCode() {
-        let userID = "UYD4N7oOGGPnz4HTCvyNBCn2jIeYCDbwI"
-        executeNonNil(
-            parcelAPIClient.resendPhoneVerificationCode(userID: userID),
-            description: "Code must be resent"
-        )
-    }
-    
+
     func testRegisterParcel() {
         let parcel = MockFactory.makeNewParcel()
         let payOnReceive = false //insert_me

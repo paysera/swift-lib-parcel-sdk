@@ -22,9 +22,6 @@ enum ParcelAPIRequestRouter {
     
     private static let baseURL = URL(string: "https://parcel-api.paysera.net/public/rest/v1")!
     
-    case getUser
-    case getAuthorizationURL
-    case getCourierAuthentication(code: String, state: String)
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
     case getTerminalSizesCount(id: String)
@@ -35,12 +32,6 @@ enum ParcelAPIRequestRouter {
     case getCountries
     case getCities(countryCode: String)
     
-    case updateUser(payload: PSUserUpdateRequest)
-    case login(payload: PSParcelLoginRequest)
-    case registerUser(payload: PSParcelRegistrationRequest)
-    case registerPayseraUser(id: String)
-    case verifyCode(userID: String, code: String)
-    case resendPhoneVerificationCode(userID: String)
     case registerParcel(payload: PSParcel, payOnReceive: Bool)
     case updateParcel(payload: PSParcel, payOnReceive: Bool)
     case unlockParcel(id: String)
@@ -52,15 +43,6 @@ private extension ParcelAPIRequestRouter {
         switch self {
         
         //MARK: GET
-        case .getUser:
-            return RequestRoute(method: .get, path: "me")
-        
-        case .getAuthorizationURL:
-            return RequestRoute(method: .get, path: "paysera-authorization-url")
-        
-        case .getCourierAuthentication(let code, let state):
-            return RequestRoute(method: .get, path: "paysera-login/\(code)/\(state)")
-            
         case .getTerminals(let filter):
             return RequestRoute(method: .get, path: "terminals", parameters: filter?.toJSON())
         
@@ -89,9 +71,6 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .get, path: "countries/\(countryCode)/cities")
             
         //MARK: PUT
-        case .updateUser(let payload):
-            return RequestRoute(method: .put, path: "me", parameters: payload.toJSON())
-            
         case .updateParcel(let payload, let payOnReceive):
             var parameters = payload.toJSON()
             parameters["pay_on_receive"] = payOnReceive
@@ -108,28 +87,6 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .put, path: "packages/\(id)/return")
         
         //MARK: POST
-        case .login(let payload):
-            return RequestRoute(method: .post, path: "login", parameters: payload.toJSON())
-            
-        case .registerUser(let payload):
-            return RequestRoute(method: .post, path: "register", parameters: payload.toJSON())
-        
-        case .registerPayseraUser(let id):
-            return RequestRoute(method: .post, path: "paysera-register/\(id)")
-         
-        case .verifyCode(let userID, let code):
-            return RequestRoute(
-                method: .post,
-                path: "\(userID)/phone-number/verify",
-                parameters: ["code": code]
-            )
-            
-        case .resendPhoneVerificationCode(let userID):
-            return RequestRoute(
-                method: .post,
-                path: "\(userID)/phone-number/resend-verification-code"
-            )
-            
         case .registerParcel(let payload, let payOnReceive):
             var parameters = payload.toJSON()
             parameters["pay_on_receive"] = payOnReceive
