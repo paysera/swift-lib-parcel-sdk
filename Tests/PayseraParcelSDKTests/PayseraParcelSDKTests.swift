@@ -7,7 +7,7 @@ import PromiseKit
 final class PayseraParcelSDKTests: XCTestCase {
     
     private lazy var parcelAPIClient: ParcelAPIClient = {
-        let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYXJjZWxfbmV0d29ya19hcGkiLCJpc3MiOiJhdXRoX2FwaSIsImV4cCI6MTYxOTAyNDI2MywianRpIjoiUGVUZnI3clNSYXNzVjR6dC1RRjZ3Z3VENGwxLVR3SFoiLCJwc3I6cyI6WyJsb2dnZWRfaW4iXSwicHNyOnUiOiI5NjQ4OTk0IiwicHNyOnNpZCI6Il9WX0w1bkFKaWhNMzVOMUE4RjhjdTR6djBCZzY4MGsyIiwicHNyOmEiOnsidXNlcl9pZCI6Ijk2NDg5OTQifSwiaWF0IjoxNjE4OTgxMDYzfQ.c7M5XiTqHcaQrvIREHcaHUnNJBCxCkqrHsqDREVEG8YRDXdEonVNtQcNsisRp37oWVgBvYNuWDbJVdpY02TRJmNbdT8zCWNu4ws0wnT8_Dzs_TV4wkA7drwCLMeHfCofXvsFjOhhLeACcTxxYAbhh0BW92T3YgcA7dsboX-gIoN0ufkYpdBDbK-6a7pxRHgrLCUpQr6fkGrOgoujoiFA0pppWYWOGP-Y_7pgjLvTo1jzs_jlQ-fsfn8ivYBlZbTwkDEm9Do3YwGP5QfQlodV3trUVYTHDIoIBbrFPTXPqsIa7IsZXYMjkWz2TdQl7-hQsKPlIC1X3cRR43ayb2J3Xw"
+        let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYXJjZWxfbmV0d29ya19hcGkiLCJpc3MiOiJhdXRoX2FwaSIsImV4cCI6MTYxOTE4ODc5OSwianRpIjoiMFQ5Y3Bld3h0bk1FWTZsRzg1YVZ5aXBjRUlyWW83SHQiLCJwc3I6cyI6WyJsb2dnZWRfaW4iXSwicHNyOnUiOiI5NjQ4OTk0IiwicHNyOnNpZCI6IjVWdnFSdTc2Z29FZXpPdXg0RUdmdzdtRnlYR213ek9GIiwicHNyOmEiOnsidXNlcl9pZCI6Ijk2NDg5OTQifSwiaWF0IjoxNjE5MTQ1NTk5fQ.KiXZwzXQONlT3kowqGADmJ3Uk3T0P2igE-7qOJcqd9kp8Z3oOg08H4UO1sFZNK-amNWt-VI6Qa-qjLYKMUHOBbw6j8CumHb1UKVAygcRazk9ZVRSgGtIz_WfhDh-BT822_Q-YSxTlHchO0RrGcrV4IzJRWugyaA6v-8ThDLwnylDO_6swjnOfjjlrqTMZyLYQtwPezjQcmSYX5VqTzstzYofcBFWNjinX5ZYHz1hiv24rCyzzEmgYAH_urfjJNfPB9rQ_trv8S4HfiHJTmN5k01bZhEyDMC_fkwnLR2jv-OUhbbJHk6BvHyQ0p1JdOl_tmHz_ifOTcdmkkWg2eR2Pw"
         
         let credentials = PSApiJWTCredentials()
         credentials.token = try! decode(jwt: token)
@@ -24,7 +24,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminal() {
-        let id = "T4DDSnNzEk6WRGxaEzfQP0XzZBpboyVWz"
+        let id = "TbZNXLYs0HiBPYmH7N_P259PgY8AEY6Vf"
         
         executeNonNil(
             parcelAPIClient.getTerminal(id: id),
@@ -33,7 +33,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminalSizes() {
-        let id = "TesW6h3Pu0vGlgY3yypPWOXwx8CVRLil3"
+        let id = "TbZNXLYs0HiBPYmH7N_P259PgY8AEY6Vf"
         executeNonNil(
             parcelAPIClient.getTerminalSizesCount(id: id),
             description: "Terminal sizes must exist"
@@ -41,7 +41,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetParcel() {
-        let id = "insert_me"
+        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
         executeNonNil(
             parcelAPIClient.getParcel(id: id),
             description: "Parcel must exist"
@@ -49,7 +49,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetParcelStatusChanges() {
-        let id = "insert_me"
+        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
         executeNonNil(
             parcelAPIClient.getParcelStatusChanges(id: id),
             description: "Parcel statuses must exist"
@@ -89,7 +89,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
 
     func testRegisterParcel() {
-        let parcel = MockFactory.makeNewParcel()
+        let parcel = MockFactory.makeNewParcelPayload()
         let payOnReceive = false //insert_me
         executeNonNil(
             parcelAPIClient.registerParcel(payload: parcel, payOnReceive: payOnReceive),
@@ -98,9 +98,8 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testUpdateParcel() {
-        let parcel = PSParcel()
-        parcel.id = "12asdasd"
-        let payOnReceive = true //insert_me
+        let parcel = MockFactory.makeUpdateParcelPayload()
+        let payOnReceive = false //insert_me
         executeNonNil(
             parcelAPIClient.updateParcel(payload: parcel, payOnReceive: payOnReceive),
             description: "Parcel must be updated"
@@ -108,7 +107,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testUnlockParcel() {
-        let id = "insert_me"
+        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
         executeNonNil(
             parcelAPIClient.unlockParcel(id: id),
             description: "Parcel must be unlocked"
@@ -116,7 +115,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testReturnParcel() {
-        let id = "insert_me"
+        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
         executeNonNil(
             parcelAPIClient.returnParcel(id: id),
             description: "Parcel return must be requested"

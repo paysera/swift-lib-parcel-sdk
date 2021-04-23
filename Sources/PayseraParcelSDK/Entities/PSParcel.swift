@@ -20,7 +20,7 @@ public final class PSParcel: Mappable {
     public var paidAt: Date?
     public var createdAt: Date?
     public var updatedAt: Date?
-    public var status: PSParcelStatus = .pending
+    public var status: PSParcelStatus?
     
     public init() { }
     

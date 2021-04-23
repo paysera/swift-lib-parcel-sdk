@@ -61,7 +61,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         )
     }
     
-    public func unlockParcel(id: String) -> Promise<Any> {
+    public func unlockParcel(id: String) -> Promise<Void> {
         doRequest(requestRouter: ParcelAPIRequestRouter.unlockParcel(id: id))
     }
     
