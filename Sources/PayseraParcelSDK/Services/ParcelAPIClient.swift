@@ -17,7 +17,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalSizesCount(id: id))
     }
     
-    public func getParcel(id: String) -> Promise<PSParcel> {
+    public func getParcel(id: String) -> Promise<PSPackage> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getParcel(id: id))
     }
     
@@ -31,11 +31,11 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCellSizes)
     }
     
-    public func getPrice(payload: PSParcelPriceFilter) -> Promise<PSMoney> {
+    public func getPrice(payload: PSPackagePriceFilter) -> Promise<PSMoney> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getPrice(payload: payload))
     }
     
-    public func getCountries() -> Promise<PSMetadataAwareResponse<PSParcelCountry>> {
+    public func getCountries() -> Promise<PSMetadataAwareResponse<PSPackageCountry>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCountries)
     }
     
@@ -43,7 +43,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCities(countryCode: countryCode))
     }
     
-    public func registerParcel(payload: PSParcel, payOnReceive: Bool) -> Promise<PSParcel> {
+    public func registerParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
             requestRouter: ParcelAPIRequestRouter.registerParcel(
                 payload: payload,
@@ -52,7 +52,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         )
     }
     
-    public func updateParcel(payload: PSParcel, payOnReceive: Bool) -> Promise<PSParcel> {
+    public func updateParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
             requestRouter: ParcelAPIRequestRouter.updateParcel(
                 payload: payload,
@@ -65,7 +65,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.unlockParcel(id: id))
     }
     
-    public func returnParcel(id: String) -> Promise<PSParcel> {
+    public func returnParcel(id: String) -> Promise<PSPackage> {
         doRequest(requestRouter: ParcelAPIRequestRouter.returnParcel(id: id))
     }
 }

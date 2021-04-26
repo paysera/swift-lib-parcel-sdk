@@ -2,7 +2,7 @@ import ObjectMapper
 import Foundation
 import PayseraCommonSDK
 
-public final class PSParcelUser: Mappable {
+public final class PSPackageUser: Mappable {
     
     public var id: String!
     public var name: String!

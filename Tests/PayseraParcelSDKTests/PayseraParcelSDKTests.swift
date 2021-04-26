@@ -63,7 +63,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetPrice() {
-        let filter = PSParcelPriceFilter()
+        let filter = PSPackagePriceFilter()
         filter.cellSize = "insert_me"
         
         executeNonNil(
@@ -88,7 +88,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
 
     func testRegisterParcel() {
-        let parcel = MockFactory.makeNewParcelPayload()
+        let parcel = MockFactory.makeNewPackagePayload()
         let payOnReceive = false //insert_me
         executeNonNil(
             parcelAPIClient.registerParcel(payload: parcel, payOnReceive: payOnReceive),
@@ -97,7 +97,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testUpdateParcel() {
-        let parcel = MockFactory.makeUpdateParcelPayload()
+        let parcel = MockFactory.makeUpdatePackagePayload()
         let payOnReceive = false //insert_me
         executeNonNil(
             parcelAPIClient.updateParcel(payload: parcel, payOnReceive: payOnReceive),

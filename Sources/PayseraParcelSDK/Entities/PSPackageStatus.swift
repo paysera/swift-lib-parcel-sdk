@@ -1,6 +1,6 @@
 import ObjectMapper
 
-public enum PSParcelStatus: String {
+public enum PSPackageStatus: String {
     case pending
     case paid
     case transit
@@ -8,16 +8,16 @@ public enum PSParcelStatus: String {
     case received
 }
 
-extension PSParcelStatus {
+extension PSPackageStatus {
     class Transform: TransformType {
-        func transformFromJSON(_ value: Any?) -> PSParcelStatus? {
+        func transformFromJSON(_ value: Any?) -> PSPackageStatus? {
             guard let value = value as? String else {
                 return nil
             }
-            return PSParcelStatus(rawValue: value)
+            return PSPackageStatus(rawValue: value)
         }
 
-        func transformToJSON(_ value: PSParcelStatus?) -> String? {
+        func transformToJSON(_ value: PSPackageStatus?) -> String? {
             value?.rawValue
         }
     }

@@ -4,8 +4,8 @@ import PayseraCommonSDK
 
 struct MockFactory {
     
-    static func makeNewParcelPayload() -> PSParcel {
-        let data = PSParcel()
+    static func makeNewPackagePayload() -> PSPackage {
+        let data = PSPackage()
         data.senderName = "insert_me"
         data.senderPhone = "insert_me"
         data.senderEmail = "insert_me"
@@ -18,8 +18,8 @@ struct MockFactory {
         return data
     }
     
-    static func makeUpdateParcelPayload() -> PSParcel {
-        let data = PSParcel()
+    static func makeUpdatePackagePayload() -> PSPackage {
+        let data = PSPackage()
         data.id = "insert_me"
         data.senderName = "insert_me"
         data.senderPhone = "insert_me"

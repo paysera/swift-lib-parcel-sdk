@@ -28,12 +28,12 @@ enum ParcelAPIRequestRouter {
     case getParcel(id: String)
     case getParcelStatusChanges(id: String)
     case getCellSizes
-    case getPrice(payload: PSParcelPriceFilter)
+    case getPrice(payload: PSPackagePriceFilter)
     case getCountries
     case getCities(countryCode: String)
     
-    case registerParcel(payload: PSParcel, payOnReceive: Bool)
-    case updateParcel(payload: PSParcel, payOnReceive: Bool)
+    case registerParcel(payload: PSPackage, payOnReceive: Bool)
+    case updateParcel(payload: PSPackage, payOnReceive: Bool)
     case unlockParcel(id: String)
     case returnParcel(id: String)
 }

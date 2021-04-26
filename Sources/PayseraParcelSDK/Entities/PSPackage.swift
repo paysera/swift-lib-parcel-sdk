@@ -2,7 +2,7 @@ import ObjectMapper
 import PayseraCommonSDK
 import Foundation
 
-public final class PSParcel: Mappable {
+public final class PSPackage: Mappable {
     public var id: String?
     public var packageNumber: String?
     public var senderName: String!
@@ -16,11 +16,11 @@ public final class PSParcel: Mappable {
     public var size: String!
     public var pinCode: String!
     public var price: PSMoney?
-    public var payment: PSParcelPayment?
+    public var payment: PSPackagePayment?
     public var paidAt: Date?
     public var createdAt: Date?
     public var updatedAt: Date?
-    public var status: PSParcelStatus?
+    public var status: PSPackageStatus?
     
     public init() { }
     
@@ -44,6 +44,6 @@ public final class PSParcel: Mappable {
         paidAt                  <- (map["paid_at"], DateTransform())
         createdAt               <- (map["created_at"], DateTransform())
         updatedAt               <- (map["updated_at"], DateTransform())
-        status                  <- (map["status"], PSParcelStatus.Transform())
+        status                  <- (map["status"], PSPackageStatus.Transform())
     }
 }
