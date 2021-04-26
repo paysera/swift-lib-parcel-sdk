@@ -7,8 +7,7 @@ import PromiseKit
 final class PayseraParcelSDKTests: XCTestCase {
     
     private lazy var parcelAPIClient: ParcelAPIClient = {
-        let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYXJjZWxfbmV0d29ya19hcGkiLCJpc3MiOiJhdXRoX2FwaSIsImV4cCI6MTYxOTE4ODc5OSwianRpIjoiMFQ5Y3Bld3h0bk1FWTZsRzg1YVZ5aXBjRUlyWW83SHQiLCJwc3I6cyI6WyJsb2dnZWRfaW4iXSwicHNyOnUiOiI5NjQ4OTk0IiwicHNyOnNpZCI6IjVWdnFSdTc2Z29FZXpPdXg0RUdmdzdtRnlYR213ek9GIiwicHNyOmEiOnsidXNlcl9pZCI6Ijk2NDg5OTQifSwiaWF0IjoxNjE5MTQ1NTk5fQ.KiXZwzXQONlT3kowqGADmJ3Uk3T0P2igE-7qOJcqd9kp8Z3oOg08H4UO1sFZNK-amNWt-VI6Qa-qjLYKMUHOBbw6j8CumHb1UKVAygcRazk9ZVRSgGtIz_WfhDh-BT822_Q-YSxTlHchO0RrGcrV4IzJRWugyaA6v-8ThDLwnylDO_6swjnOfjjlrqTMZyLYQtwPezjQcmSYX5VqTzstzYofcBFWNjinX5ZYHz1hiv24rCyzzEmgYAH_urfjJNfPB9rQ_trv8S4HfiHJTmN5k01bZhEyDMC_fkwnLR2jv-OUhbbJHk6BvHyQ0p1JdOl_tmHz_ifOTcdmkkWg2eR2Pw"
-        
+        let token = "insert_me"
         let credentials = PSApiJWTCredentials()
         credentials.token = try! decode(jwt: token)
         return ParcelAPIClientFactory.createParcelAPIClient(credentials: credentials)
@@ -24,7 +23,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminal() {
-        let id = "TbZNXLYs0HiBPYmH7N_P259PgY8AEY6Vf"
+        let id = "insert_me"
         
         executeNonNil(
             parcelAPIClient.getTerminal(id: id),
@@ -33,7 +32,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetTerminalSizes() {
-        let id = "TbZNXLYs0HiBPYmH7N_P259PgY8AEY6Vf"
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.getTerminalSizesCount(id: id),
             description: "Terminal sizes must exist"
@@ -41,7 +40,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetParcel() {
-        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.getParcel(id: id),
             description: "Parcel must exist"
@@ -49,7 +48,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testGetParcelStatusChanges() {
-        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.getParcelStatusChanges(id: id),
             description: "Parcel statuses must exist"
@@ -107,7 +106,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testUnlockParcel() {
-        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.unlockParcel(id: id),
             description: "Parcel must be unlocked"
@@ -115,7 +114,7 @@ final class PayseraParcelSDKTests: XCTestCase {
     }
     
     func testReturnParcel() {
-        let id = "HgV9RAFn-1Kb74m19n1iM6RRZIdFZHOVQ"
+        let id = "insert_me"
         executeNonNil(
             parcelAPIClient.returnParcel(id: id),
             description: "Parcel return must be requested"
