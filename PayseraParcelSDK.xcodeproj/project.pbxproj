@@ -114,7 +114,6 @@
 		OBJ_298 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Package.swift */; };
 		OBJ_304 /* PSParcelPriceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* PSParcelPriceFilter.swift */; };
 		OBJ_305 /* PSTerminalFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PSTerminalFilter.swift */; };
-		OBJ_306 /* PSAuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PSAuthorizationResult.swift */; };
 		OBJ_307 /* PSCourierCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PSCourierCompany.swift */; };
 		OBJ_308 /* PSParcel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PSParcel.swift */; };
 		OBJ_309 /* PSParcelCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PSParcelCountry.swift */; };
@@ -312,7 +311,6 @@
 		OBJ_127 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
 		OBJ_128 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		OBJ_129 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_13 /* PSAuthorizationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSAuthorizationResult.swift; sourceTree = "<group>"; };
 		OBJ_130 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_131 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
 		OBJ_132 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
@@ -760,7 +758,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* Filter */,
-				OBJ_13 /* PSAuthorizationResult.swift */,
 				OBJ_14 /* PSCourierCompany.swift */,
 				OBJ_15 /* PSParcel.swift */,
 				OBJ_16 /* PSParcelCountry.swift */,
@@ -1177,7 +1174,6 @@
 			files = (
 				OBJ_304 /* PSParcelPriceFilter.swift in Sources */,
 				OBJ_305 /* PSTerminalFilter.swift in Sources */,
-				OBJ_306 /* PSAuthorizationResult.swift in Sources */,
 				OBJ_307 /* PSCourierCompany.swift in Sources */,
 				OBJ_308 /* PSParcel.swift in Sources */,
 				746A2763262FECEE008C8C4E /* PSParcelStatus.swift in Sources */,
