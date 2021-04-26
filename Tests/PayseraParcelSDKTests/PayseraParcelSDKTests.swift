@@ -39,18 +39,18 @@ final class PayseraParcelSDKTests: XCTestCase {
         )
     }
     
-    func testGetParcel() {
+    func testGetPackage() {
         let id = "insert_me"
         executeNonNil(
-            parcelAPIClient.getParcel(id: id),
+            parcelAPIClient.getPackage(id: id),
             description: "Parcel must exist"
         )
     }
     
-    func testGetParcelStatusChanges() {
+    func testGetPackageStatusChanges() {
         let id = "insert_me"
         executeNonNil(
-            parcelAPIClient.getParcelStatusChanges(id: id),
+            parcelAPIClient.getPackageStatusChanges(id: id),
             description: "Parcel statuses must exist"
         )
     }

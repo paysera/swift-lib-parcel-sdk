@@ -11,7 +11,7 @@ public final class PSPackageCountry: Mappable {
     }
 }
 
-public final class PSParcelCity: Mappable {
+public final class PSPackageCity: Mappable {
     
     public var name: String!
     

@@ -17,14 +17,14 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalSizesCount(id: id))
     }
     
-    public func getParcel(id: String) -> Promise<PSPackage> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getParcel(id: id))
+    public func getPackage(id: String) -> Promise<PSPackage> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getPackage(id: id))
     }
     
-    public func getParcelStatusChanges(
+    public func getPackageStatusChanges(
         id: String
     ) -> Promise<PSMetadataAwareResponse<PSStatusChange>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getParcelStatusChanges(id: id))
+        doRequest(requestRouter: ParcelAPIRequestRouter.getPackageStatusChanges(id: id))
     }
     
     public func getCellSizes() -> Promise<PSMetadataAwareResponse<PSSize>> {
@@ -39,13 +39,13 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCountries)
     }
     
-    public func getCities(countryCode: String) -> Promise<PSMetadataAwareResponse<PSParcelCity>> {
+    public func getCities(countryCode: String) -> Promise<PSMetadataAwareResponse<PSPackageCity>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCities(countryCode: countryCode))
     }
     
     public func registerParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
-            requestRouter: ParcelAPIRequestRouter.registerParcel(
+            requestRouter: ParcelAPIRequestRouter.registerPackage(
                 payload: payload,
                 payOnReceive: payOnReceive
             )
@@ -54,7 +54,7 @@ public class ParcelAPIClient: PSBaseApiClient {
     
     public func updateParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
-            requestRouter: ParcelAPIRequestRouter.updateParcel(
+            requestRouter: ParcelAPIRequestRouter.updatePackage(
                 payload: payload,
                 payOnReceive: payOnReceive
             )
@@ -62,10 +62,10 @@ public class ParcelAPIClient: PSBaseApiClient {
     }
     
     public func unlockParcel(id: String) -> Promise<Void> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.unlockParcel(id: id))
+        doRequest(requestRouter: ParcelAPIRequestRouter.unlockPackage(id: id))
     }
     
     public func returnParcel(id: String) -> Promise<PSPackage> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.returnParcel(id: id))
+        doRequest(requestRouter: ParcelAPIRequestRouter.returnPackage(id: id))
     }
 }
