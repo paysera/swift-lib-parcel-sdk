@@ -1,5 +1,4 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
@@ -10,7 +9,7 @@ let package = Package(
         .library(name: "PayseraParcelSDK", targets: ["PayseraParcelSDK"]),
     ],
     dependencies: [
-        .package(name: "PayseraCommonSDK", url: "https://github.com/paysera/swift-lib-common-sdk", from: "3.0.1")
+        .package(name: "PayseraCommonSDK", url: "https://github.com/paysera/swift-lib-common-sdk", from: "4.1.0")
     ],
     targets: [
         .target(

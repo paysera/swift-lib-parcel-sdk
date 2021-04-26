@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/paysera/swift-lib-common-sdk",
         "state": {
           "branch": null,
-          "revision": "90bcdfd1ccdf8730cc29175c207f97b47db35633",
-          "version": "3.0.1"
+          "revision": "4bb4db1d53c86d8f86c9511b80b57f4d6759680d",
+          "version": "4.1.0"
         }
       }
     ]
