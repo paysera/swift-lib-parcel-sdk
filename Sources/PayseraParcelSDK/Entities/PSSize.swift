@@ -3,9 +3,9 @@ import ObjectMapper
 public final class PSSize: Mappable {
     
     public var name: String!
-    public var height: Float!
-    public var depth: Float!
-    public var width: Float!
+    public var height: Double!
+    public var depth: Double!
+    public var width: Double!
     
     required public init?(map: Map) { }
     

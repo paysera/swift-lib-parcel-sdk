@@ -1,6 +1,7 @@
 import Alamofire
 import PayseraCommonSDK
 import Foundation
+import ObjectMapper
 
 private struct RequestRoute {
     let method: HTTPMethod
@@ -16,12 +17,22 @@ private struct RequestRoute {
         self.path = path
         self.parameters = parameters
     }
+    
+    init<Payload>(
+        method: HTTPMethod,
+        path: String,
+        payload: Payload?
+    ) where Payload: BaseMappable {
+        self.init(method: method, path: path, parameters: payload?.toJSON())
+    }
 }
 
 enum ParcelAPIRequestRouter {
     
+    //MARK: BASEURL
     private static let baseURL = URL(string: "https://parcel-api.paysera.net/public/rest/v1")!
     
+    //MARK: GET
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
     case getTerminalSizesCount(id: String)
@@ -32,7 +43,10 @@ enum ParcelAPIRequestRouter {
     case getCountries
     case getCities(countryCode: String)
     
+    //MARK: POST
     case registerParcel(payload: PSPackage, payOnReceive: Bool)
+    
+    //MARK: PUT
     case updateParcel(payload: PSPackage, payOnReceive: Bool)
     case unlockParcel(id: String)
     case returnParcel(id: String)
@@ -44,7 +58,7 @@ private extension ParcelAPIRequestRouter {
         
         //MARK: GET
         case .getTerminals(let filter):
-            return RequestRoute(method: .get, path: "terminals", parameters: filter?.toJSON())
+            return RequestRoute(method: .get, path: "terminals", payload: filter)
         
         case .getTerminal(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)")
@@ -62,7 +76,7 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .get, path: "cell-sizes")
           
         case .getPrice(let payload):
-            return RequestRoute(method: .get, path: "price", parameters: payload.toJSON())
+            return RequestRoute(method: .get, path: "price", payload: payload)
             
         case .getCountries:
             return RequestRoute(method: .get, path: "countries")

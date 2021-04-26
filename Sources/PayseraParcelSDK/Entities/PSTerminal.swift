@@ -9,8 +9,8 @@ public final class PSTerminal: Mappable {
     public var city: String!
     public var address: String!
     public var workingHours: String?
-    public var latitude: Float?
-    public var longitude: Float?
+    public var latitude: Double?
+    public var longitude: Double?
     
     required public init?(map: Map) { }
     
