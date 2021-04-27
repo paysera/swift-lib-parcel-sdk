@@ -43,7 +43,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCities(countryCode: countryCode))
     }
     
-    public func registerParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
+    public func registerPackage(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
             requestRouter: ParcelAPIRequestRouter.registerPackage(
                 payload: payload,
@@ -52,7 +52,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         )
     }
     
-    public func updateParcel(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
+    public func updatePackage(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
         doRequest(
             requestRouter: ParcelAPIRequestRouter.updatePackage(
                 payload: payload,
@@ -61,11 +61,11 @@ public class ParcelAPIClient: PSBaseApiClient {
         )
     }
     
-    public func unlockParcel(id: String) -> Promise<Void> {
+    public func unlockPackage(id: String) -> Promise<Void> {
         doRequest(requestRouter: ParcelAPIRequestRouter.unlockPackage(id: id))
     }
     
-    public func returnParcel(id: String) -> Promise<PSPackage> {
+    public func returnPackage(id: String) -> Promise<PSPackage> {
         doRequest(requestRouter: ParcelAPIRequestRouter.returnPackage(id: id))
     }
 }

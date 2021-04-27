@@ -43,7 +43,7 @@ final class PayseraParcelSDKTests: XCTestCase {
         let id = "insert_me"
         executeNonNil(
             parcelAPIClient.getPackage(id: id),
-            description: "Parcel must exist"
+            description: "Package must exist"
         )
     }
     
@@ -51,7 +51,7 @@ final class PayseraParcelSDKTests: XCTestCase {
         let id = "insert_me"
         executeNonNil(
             parcelAPIClient.getPackageStatusChanges(id: id),
-            description: "Parcel statuses must exist"
+            description: "Package statuses must exist"
         )
     }
 
@@ -87,37 +87,37 @@ final class PayseraParcelSDKTests: XCTestCase {
         )
     }
 
-    func testRegisterParcel() {
-        let parcel = MockFactory.makeNewPackagePayload()
+    func testRegisterPackage() {
+        let payload = MockFactory.makeNewPackagePayload()
         let payOnReceive = false //insert_me
         executeNonNil(
-            parcelAPIClient.registerParcel(payload: parcel, payOnReceive: payOnReceive),
-            description: "Parcel must be registered"
+            parcelAPIClient.registerPackage(payload: payload, payOnReceive: payOnReceive),
+            description: "Package must be registered"
         )
     }
     
-    func testUpdateParcel() {
-        let parcel = MockFactory.makeUpdatePackagePayload()
+    func testUpdatePackage() {
+        let payload = MockFactory.makeUpdatePackagePayload()
         let payOnReceive = false //insert_me
         executeNonNil(
-            parcelAPIClient.updateParcel(payload: parcel, payOnReceive: payOnReceive),
-            description: "Parcel must be updated"
+            parcelAPIClient.updatePackage(payload: payload, payOnReceive: payOnReceive),
+            description: "Package must be updated"
         )
     }
     
-    func testUnlockParcel() {
+    func testUnlockPackage() {
         let id = "insert_me"
         executeNonNil(
-            parcelAPIClient.unlockParcel(id: id),
-            description: "Parcel must be unlocked"
+            parcelAPIClient.unlockPackage(id: id),
+            description: "Package must be unlocked"
         )
     }
     
-    func testReturnParcel() {
+    func testReturnPackage() {
         let id = "insert_me"
         executeNonNil(
-            parcelAPIClient.returnParcel(id: id),
-            description: "Parcel return must be requested"
+            parcelAPIClient.returnPackage(id: id),
+            description: "Package return must be requested"
         )
     }
 }

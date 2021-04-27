@@ -29,10 +29,10 @@ private struct RequestRoute {
 
 enum ParcelAPIRequestRouter {
     
-    //MARK: BASEURL
+    // MARK: BASEURL
     private static let baseURL = URL(string: "https://parcel-api.paysera.net/public/rest/v1")!
     
-    //MARK: GET
+    // MARK: GET
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
     case getTerminalSizesCount(id: String)
@@ -43,10 +43,10 @@ enum ParcelAPIRequestRouter {
     case getCountries
     case getCities(countryCode: String)
     
-    //MARK: POST
+    // MARK: POST
     case registerPackage(payload: PSPackage, payOnReceive: Bool)
     
-    //MARK: PUT
+    // MARK: PUT
     case updatePackage(payload: PSPackage, payOnReceive: Bool)
     case unlockPackage(id: String)
     case returnPackage(id: String)
@@ -56,7 +56,7 @@ private extension ParcelAPIRequestRouter {
     var route: RequestRoute {
         switch self {
         
-        //MARK: GET
+        // MARK: GET
         case .getTerminals(let filter):
             return RequestRoute(method: .get, path: "terminals", payload: filter)
         
@@ -84,7 +84,7 @@ private extension ParcelAPIRequestRouter {
         case .getCities(let countryCode):
             return RequestRoute(method: .get, path: "countries/\(countryCode)/cities")
             
-        //MARK: PUT
+        // MARK: PUT
         case .updatePackage(let payload, let payOnReceive):
             var parameters = payload.toJSON()
             parameters["pay_on_receive"] = payOnReceive
@@ -100,7 +100,7 @@ private extension ParcelAPIRequestRouter {
         case .returnPackage(let id):
             return RequestRoute(method: .put, path: "packages/\(id)/return")
         
-        //MARK: POST
+        // MARK: POST
         case .registerPackage(let payload, let payOnReceive):
             var parameters = payload.toJSON()
             parameters["pay_on_receive"] = payOnReceive

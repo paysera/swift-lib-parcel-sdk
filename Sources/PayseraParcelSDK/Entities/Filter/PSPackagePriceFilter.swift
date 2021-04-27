@@ -1,5 +1,4 @@
 import ObjectMapper
-import PayseraCommonSDK
 
 public final class PSPackagePriceFilter: Mappable {
     
