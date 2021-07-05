@@ -31,11 +31,31 @@ final class PayseraParcelSDKTests: XCTestCase {
         )
     }
     
-    func testGetTerminalSizes() {
+    func testGetTerminalCells() {
         let id = "insert_me"
+        
+        executeNonNil(
+            parcelAPIClient.getTerminalCells(id: id),
+            description: "Terminal cells must exist"
+        )
+    }
+    
+    func testGetTerminalSizesCount() {
+        let id = "insert_me"
+        
         executeNonNil(
             parcelAPIClient.getTerminalSizesCount(id: id),
             description: "Terminal sizes must exist"
+        )
+    }
+    
+    func testGetPackages() {
+        let filter = PSPackageFilter()
+        filter.statuses = [.pending]
+        
+        executeNonNil(
+            parcelAPIClient.getPackages(filter: filter),
+            description: "Packages must exist"
         )
     }
     
@@ -86,21 +106,36 @@ final class PayseraParcelSDKTests: XCTestCase {
             description: "Cities must exist"
         )
     }
+    
+    func testGetUser() {
+        executeNonNil(
+            parcelAPIClient.getUser(),
+            description: "User must exist"
+        )
+    }
 
     func testRegisterPackage() {
         let payload = MockFactory.makeNewPackagePayload()
-        let payOnReceive = false //insert_me
         executeNonNil(
-            parcelAPIClient.registerPackage(payload: payload, payOnReceive: payOnReceive),
+            parcelAPIClient.registerPackage(payload: payload),
+            description: "Package must be registered"
+        )
+    }
+    
+    func testProvidePackage() {
+        let id = "insert_me"
+        let payload = MockFactory.makeProvidePackagePayload()
+        executeNonNil(
+            parcelAPIClient.providePackage(id: id, payload: payload),
             description: "Package must be registered"
         )
     }
     
     func testUpdatePackage() {
+        let id = "insert_me"
         let payload = MockFactory.makeUpdatePackagePayload()
-        let payOnReceive = false //insert_me
         executeNonNil(
-            parcelAPIClient.updatePackage(payload: payload, payOnReceive: payOnReceive),
+            parcelAPIClient.updatePackage(id: id, payload: payload),
             description: "Package must be updated"
         )
     }

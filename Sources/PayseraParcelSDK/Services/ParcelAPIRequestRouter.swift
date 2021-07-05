@@ -35,19 +35,23 @@ enum ParcelAPIRequestRouter {
     // MARK: GET
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
+    case getTerminalCells(id: String)
     case getTerminalSizesCount(id: String)
+    case getPackages(filter: PSPackageFilter?)
     case getPackage(id: String)
     case getPackageStatusChanges(id: String)
     case getCellSizes
     case getPrice(payload: PSPackagePriceFilter)
     case getCountries
     case getCities(countryCode: String)
+    case getUser
     
     // MARK: POST
-    case registerPackage(payload: PSPackage, payOnReceive: Bool)
+    case registerPackage(payload: PSPackagePayload)
+    case providePackage(id: String, payload: PSPackagePayload)
     
     // MARK: PUT
-    case updatePackage(payload: PSPackage, payOnReceive: Bool)
+    case updatePackage(id: String, payload: PSPackagePayload)
     case unlockPackage(id: String)
     case returnPackage(id: String)
 }
@@ -59,57 +63,55 @@ private extension ParcelAPIRequestRouter {
         // MARK: GET
         case .getTerminals(let filter):
             return RequestRoute(method: .get, path: "terminals", payload: filter)
-        
         case .getTerminal(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)")
-          
+        case .getTerminalCells(let id):
+            return RequestRoute(method: .get, path: "terminals/\(id)/cells")
         case .getTerminalSizesCount(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)/sizes")
-            
+        case .getPackages(let filter):
+            return RequestRoute(method: .get, path: "packages", payload: filter)
         case .getPackage(let id):
             return RequestRoute(method: .get, path: "packages/\(id)")
-        
         case .getPackageStatusChanges(let id):
             return RequestRoute(method: .get, path: "packages/\(id)/events")
-          
         case .getCellSizes:
             return RequestRoute(method: .get, path: "cell-sizes")
-          
         case .getPrice(let payload):
             return RequestRoute(method: .get, path: "price", payload: payload)
-            
         case .getCountries:
             return RequestRoute(method: .get, path: "countries")
-        
         case .getCities(let countryCode):
             return RequestRoute(method: .get, path: "countries/\(countryCode)/cities")
-            
+        case .getUser:
+            return RequestRoute(method: .get, path: "me")
+        
         // MARK: PUT
-        case .updatePackage(let payload, let payOnReceive):
-            var parameters = payload.toJSON()
-            parameters["pay_on_receive"] = payOnReceive
+        case .updatePackage(let id, let payload):
             return RequestRoute(
                 method: .put,
-                path: "packages/\(payload.id!)",
-                parameters: parameters
+                path: "packages/\(id)",
+                payload: payload
             )
-            
         case .unlockPackage(let id):
             return RequestRoute(method: .put, path: "packages/\(id)/unlock")
-            
         case .returnPackage(let id):
             return RequestRoute(method: .put, path: "packages/\(id)/return")
         
         // MARK: POST
-        case .registerPackage(let payload, let payOnReceive):
-            var parameters = payload.toJSON()
-            parameters["pay_on_receive"] = payOnReceive
+        case .registerPackage(let payload):
             return RequestRoute(
                 method: .post,
                 path: "packages",
-                parameters: parameters
+                payload: payload
             )
-        }
+        case .providePackage(let id, let payload):
+            return RequestRoute(
+                method: .post,
+                path: "packages/\(id)/provide",
+                payload: payload
+            )
+        }   
     }
 }
 
