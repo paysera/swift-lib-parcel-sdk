@@ -13,8 +13,15 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminal(id: id))
     }
     
+    public func getTerminalCells(id: String) -> Promise<PSMetadataAwareResponse<PSTerminalCell>> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalCells(id: id))
+    }
     public func getTerminalSizesCount(id: String) -> Promise<PSMetadataAwareResponse<PSSizeCount>>{
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalSizesCount(id: id))
+    }
+    
+    public func getPackages(filter: PSPackageFilter?) -> Promise<PSMetadataAwareResponse<PSPackage>> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getPackages(filter: filter))
     }
     
     public func getPackage(id: String) -> Promise<PSPackage> {
@@ -43,22 +50,20 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getCities(countryCode: countryCode))
     }
     
-    public func registerPackage(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
-        doRequest(
-            requestRouter: ParcelAPIRequestRouter.registerPackage(
-                payload: payload,
-                payOnReceive: payOnReceive
-            )
-        )
+    public func getUser() -> Promise<PSPackageUser> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getUser)
     }
     
-    public func updatePackage(payload: PSPackage, payOnReceive: Bool) -> Promise<PSPackage> {
-        doRequest(
-            requestRouter: ParcelAPIRequestRouter.updatePackage(
-                payload: payload,
-                payOnReceive: payOnReceive
-            )
-        )
+    public func registerPackage(payload: PSPackagePayload) -> Promise<PSPackage> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.registerPackage(payload: payload))
+    }
+    
+    public func providePackage(id: String, payload: PSPackagePayload) -> Promise<PSPackage> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.providePackage(id: id, payload: payload))
+    }
+    
+    public func updatePackage(id: String, payload: PSPackagePayload) -> Promise<PSPackage> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.updatePackage(id: id, payload: payload))
     }
     
     public func unlockPackage(id: String) -> Promise<Void> {

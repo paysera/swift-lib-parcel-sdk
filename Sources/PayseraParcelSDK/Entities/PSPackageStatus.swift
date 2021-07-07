@@ -2,10 +2,13 @@ import ObjectMapper
 
 public enum PSPackageStatus: String {
     case pending
-    case paid
+    case ready
     case transit
     case delivered
     case received
+    case canceled
+    case returnRequested = "return_requested"
+    case outdated
 }
 
 extension PSPackageStatus {
