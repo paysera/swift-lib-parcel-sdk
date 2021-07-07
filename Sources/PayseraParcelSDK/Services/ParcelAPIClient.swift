@@ -13,7 +13,7 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminal(id: id))
     }
     
-    public func getTerminalCells(id: String) -> Promise<PSMetadataAwareResponse<PSSimpleCell>> {
+    public func getTerminalCells(id: String) -> Promise<PSMetadataAwareResponse<PSTerminalCell>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalCells(id: id))
     }
     public func getTerminalSizesCount(id: String) -> Promise<PSMetadataAwareResponse<PSSizeCount>>{

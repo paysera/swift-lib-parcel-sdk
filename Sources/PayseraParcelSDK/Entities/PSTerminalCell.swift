@@ -1,6 +1,6 @@
 import ObjectMapper
 
-public final class PSSimpleCell: Mappable {
+public final class PSTerminalCell: Mappable {
     public var id: String!
     public var size: String!
     public var number: String!
