@@ -3,15 +3,10 @@ import ObjectMapper
 public struct PSCellState: RawRepresentable {
     public let rawValue: String
     
-    public var isFree: Bool { rawValue == Self.free }
-    public var isOpened: Bool { rawValue == Self.opened }
-    public var isOccupied: Bool { rawValue == Self.occupied }
-    public var isReserved: Bool { rawValue == Self.reserved }
-    
-    public static let free = "free"
-    public static let opened = "opened"
-    public static let occupied = "occupied"
-    public static let reserved = "reserved"
+    public static let free = PSCellState(rawValue: "free")
+    public static let opened = PSCellState(rawValue: "opened")
+    public static let occupied = PSCellState(rawValue: "occupied")
+    public static let reserved = PSCellState(rawValue: "reserved")
     
     public init(rawValue: String) {
         self.rawValue = rawValue

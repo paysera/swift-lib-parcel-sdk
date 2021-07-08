@@ -21,9 +21,9 @@ public final class PSPackage: Mappable {
     public var payment: PSPackagePayment?
     public var statusChanges: PSMetadataAwareResponse<PSStatusChange>!
     public var paidAt: Date?
-    public var createdAt: Date?
+    public var createdAt: Date!
     public var updatedAt: Date?
-    public var status: PSPackageStatus?
+    public var status: PSPackageStatus!
     
     public init() { }
     

@@ -3,9 +3,8 @@ import Foundation
 import PayseraCommonSDK
 
 public final class PSStatusChange: Mappable {
-    
+    public var status: PSPackageStatus!
     public var createdAt: Date?
-    public var status: PSPackageStatus = .pending
 
     required public init?(map: Map) { }
     
