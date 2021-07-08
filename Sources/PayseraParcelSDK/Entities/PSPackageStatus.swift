@@ -1,14 +1,20 @@
 import ObjectMapper
 
-public enum PSPackageStatus: String {
-    case pending
-    case ready
-    case transit
-    case delivered
-    case received
-    case canceled
-    case returnRequested = "return_requested"
-    case outdated
+public struct PSPackageStatus: RawRepresentable {
+    public let rawValue: String
+    
+    public static let pending = PSPackageStatus(rawValue: "pending")
+    public static let ready = PSPackageStatus(rawValue: "ready")
+    public static let transit = PSPackageStatus(rawValue: "transit")
+    public static let delivered = PSPackageStatus(rawValue: "delivered")
+    public static let received = PSPackageStatus(rawValue: "received")
+    public static let canceled = PSPackageStatus(rawValue: "canceled")
+    public static let returnRequested = PSPackageStatus(rawValue: "return_requested")
+    public static let outdated = PSPackageStatus(rawValue: "outdated")
+    
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+    }
 }
 
 extension PSPackageStatus {

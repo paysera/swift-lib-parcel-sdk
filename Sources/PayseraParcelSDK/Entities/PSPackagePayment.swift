@@ -4,7 +4,7 @@ public final class PSPackagePayment: Mappable {
 
     public var paymentNumber: String!
     public var paymentURL: String!
-    public var status: PSPackagePaymentStatus = .new
+    public var status: PSPackagePaymentStatus!
     
     required public init?(map: Map) { }
     

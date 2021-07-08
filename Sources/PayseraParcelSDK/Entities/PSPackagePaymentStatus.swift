@@ -1,10 +1,16 @@
 import ObjectMapper
 
-public enum PSPackagePaymentStatus: String {
-    case new
-    case authorized
-    case captured
-    case cancelled
+public struct PSPackagePaymentStatus: RawRepresentable {
+    public let rawValue: String
+    
+    public static let new = PSPackagePaymentStatus(rawValue: "new")
+    public static let authorized = PSPackagePaymentStatus(rawValue: "authorized")
+    public static let captured = PSPackagePaymentStatus(rawValue: "captured")
+    public static let cancelled = PSPackagePaymentStatus(rawValue: "cancelled")
+    
+    public init(rawValue: String) {
+        self.rawValue = rawValue
+    }
 }
 
 extension PSPackagePaymentStatus {
