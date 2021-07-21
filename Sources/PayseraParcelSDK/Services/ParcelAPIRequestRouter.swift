@@ -30,7 +30,7 @@ private struct RequestRoute {
 enum ParcelAPIRequestRouter {
     
     // MARK: BASEURL
-    private static let baseURL = URL(string: "https://parcel-api.paysera.net/public/rest/v1")!
+    private static let baseURL = URL(string: "https://lockers-sandbox-api.paysera.com/public/rest/v1")!
     
     // MARK: GET
     case getTerminals(filter: PSTerminalFilter?)
