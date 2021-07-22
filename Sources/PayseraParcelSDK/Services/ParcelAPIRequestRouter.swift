@@ -35,15 +35,15 @@ enum ParcelAPIRequestRouter {
     // MARK: GET
     case getTerminals(filter: PSTerminalFilter?)
     case getTerminal(id: String)
-    case getTerminalCells(id: String)
-    case getTerminalSizesCount(id: String)
+    case getTerminalCells(id: String, filter: PSBaseCompanyFilter?)
+    case getTerminalSizesCount(id: String, filter: PSBaseCompanyFilter?)
     case getPackages(filter: PSPackageFilter?)
     case getPackage(id: String)
-    case getPackageStatusChanges(id: String)
-    case getCellSizes
+    case getPackageStatusChanges(id: String, filter: PSBaseFilter?)
+    case getCellSizes(filter: PSBaseFilter?)
     case getPrice(payload: PSPackagePriceFilter)
-    case getCountries
-    case getCities(countryCode: String)
+    case getCountries(filter: PSBaseFilter?)
+    case getCities(countryCode: String, filter: PSBaseFilter?)
     case getUser
     
     // MARK: POST
@@ -65,24 +65,28 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .get, path: "terminals", payload: filter)
         case .getTerminal(let id):
             return RequestRoute(method: .get, path: "terminals/\(id)")
-        case .getTerminalCells(let id):
-            return RequestRoute(method: .get, path: "terminals/\(id)/cells")
-        case .getTerminalSizesCount(let id):
-            return RequestRoute(method: .get, path: "terminals/\(id)/sizes")
+        case .getTerminalCells(let id, let filter):
+            return RequestRoute(method: .get, path: "terminals/\(id)/cells", payload: filter)
+        case .getTerminalSizesCount(let id, let filter):
+            return RequestRoute(method: .get, path: "terminals/\(id)/sizes", payload: filter)
         case .getPackages(let filter):
             return RequestRoute(method: .get, path: "packages", payload: filter)
         case .getPackage(let id):
             return RequestRoute(method: .get, path: "packages/\(id)")
-        case .getPackageStatusChanges(let id):
-            return RequestRoute(method: .get, path: "packages/\(id)/events")
-        case .getCellSizes:
-            return RequestRoute(method: .get, path: "cell-sizes")
+        case .getPackageStatusChanges(let id, let filter):
+            return RequestRoute(method: .get, path: "packages/\(id)/events", payload: filter)
+        case .getCellSizes(let filter):
+            return RequestRoute(method: .get, path: "cell-sizes", payload: filter)
         case .getPrice(let payload):
             return RequestRoute(method: .get, path: "price", payload: payload)
-        case .getCountries:
-            return RequestRoute(method: .get, path: "countries")
-        case .getCities(let countryCode):
-            return RequestRoute(method: .get, path: "countries/\(countryCode)/cities")
+        case .getCountries(let filter):
+            return RequestRoute(method: .get, path: "countries", payload: filter)
+        case .getCities(let countryCode, let filter):
+            return RequestRoute(
+                method: .get,
+                path: "countries/\(countryCode)/cities",
+                payload: filter
+            )
         case .getUser:
             return RequestRoute(method: .get, path: "me")
         
