@@ -4,7 +4,7 @@ import PromiseKit
 public class ParcelAPIClient: PSBaseApiClient {
     
     public func getTerminals(
-        filter: PSTerminalFilter?
+        filter: PSTerminalFilter? = nil
     ) -> Promise<PSMetadataAwareResponse<PSTerminal>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminals(filter: filter))
     }
@@ -13,14 +13,24 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminal(id: id))
     }
     
-    public func getTerminalCells(id: String) -> Promise<PSMetadataAwareResponse<PSTerminalCell>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalCells(id: id))
+    public func getTerminalCells(
+        id: String,
+        filter: PSBaseCompanyFilter? = nil
+    ) -> Promise<PSMetadataAwareResponse<PSTerminalCell>> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalCells(id: id, filter: filter))
     }
-    public func getTerminalSizesCount(id: String) -> Promise<PSMetadataAwareResponse<PSSizeCount>>{
-        doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalSizesCount(id: id))
+    public func getTerminalSizesCount(
+        id: String,
+        filter: PSBaseCompanyFilter? = nil
+    ) -> Promise<PSMetadataAwareResponse<PSSizeCount>>{
+        doRequest(
+            requestRouter: ParcelAPIRequestRouter.getTerminalSizesCount(id: id, filter: filter)
+        )
     }
     
-    public func getPackages(filter: PSPackageFilter?) -> Promise<PSMetadataAwareResponse<PSPackage>> {
+    public func getPackages(
+        filter: PSPackageFilter?
+    ) -> Promise<PSMetadataAwareResponse<PSPackage>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getPackages(filter: filter))
     }
     
@@ -29,25 +39,40 @@ public class ParcelAPIClient: PSBaseApiClient {
     }
     
     public func getPackageStatusChanges(
-        id: String
+        id: String,
+        filter: PSBaseFilter? = nil
     ) -> Promise<PSMetadataAwareResponse<PSStatusChange>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getPackageStatusChanges(id: id))
+        doRequest(
+            requestRouter: ParcelAPIRequestRouter.getPackageStatusChanges(id: id, filter: filter)
+        )
     }
     
-    public func getCellSizes() -> Promise<PSMetadataAwareResponse<PSSize>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getCellSizes)
+    public func getCellSizes(
+        filter: PSBaseFilter? = nil
+    ) -> Promise<PSMetadataAwareResponse<PSSize>> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getCellSizes(filter: filter))
     }
     
     public func getPrice(payload: PSPackagePriceFilter) -> Promise<PSMoney> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getPrice(payload: payload))
     }
     
-    public func getCountries() -> Promise<PSMetadataAwareResponse<PSPackageCountry>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getCountries)
+    public func getCountries(
+        filter: PSBaseFilter? = nil
+    ) -> Promise<PSMetadataAwareResponse<PSPackageCountry>> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.getCountries(filter: filter))
     }
     
-    public func getCities(countryCode: String) -> Promise<PSMetadataAwareResponse<PSPackageCity>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getCities(countryCode: countryCode))
+    public func getCities(
+        countryCode: String,
+        filter: PSBaseFilter? = nil
+    ) -> Promise<PSMetadataAwareResponse<PSPackageCity>> {
+        doRequest(
+            requestRouter: ParcelAPIRequestRouter.getCities(
+                countryCode: countryCode,
+                filter: filter
+            )
+        )
     }
     
     public func getUser() -> Promise<PSPackageUser> {
