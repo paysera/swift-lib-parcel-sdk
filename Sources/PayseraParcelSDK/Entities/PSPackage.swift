@@ -15,7 +15,7 @@ public final class PSPackage: Mappable {
     public var receiverLanguage: String?
     public var sourceTerminal: PSTerminal?
     public var destinationTerminal: PSTerminal?
-    public var size: String!
+    public var size: String?
     public var cell: PSCell?
     public var price: PSMoney?
     public var payment: PSPackagePayment?
