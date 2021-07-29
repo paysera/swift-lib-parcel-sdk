@@ -1,7 +1,7 @@
 import ObjectMapper
 import PayseraCommonSDK
 
-public final class PSPackageFilter: PSBaseFilter {
+public final class PSPackageFilter: PSBaseCompanyFilter {
     public var statuses: [PSPackageStatus]?
     public var receiverPhonePart: String?
     public var fromCreatedAt: String?
