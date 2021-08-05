@@ -23,6 +23,7 @@ public final class PSPackage: Mappable {
     public var paidAt: Date?
     public var createdAt: Date!
     public var updatedAt: Date?
+    public var storeUntil: Date?
     public var status: PSPackageStatus!
     
     public init() { }
@@ -50,6 +51,7 @@ public final class PSPackage: Mappable {
         paidAt                  <- (map["paid_at"], DateTransform())
         createdAt               <- (map["created_at"], DateTransform())
         updatedAt               <- (map["updated_at"], DateTransform())
+        storeUntil              <- (map["store_until"], DateTransform())
         status                  <- (map["status"], PSPackageStatus.Transform())
     }
 }
