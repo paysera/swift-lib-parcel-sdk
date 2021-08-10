@@ -5,8 +5,8 @@ import PayseraCommonSDK
 public final class PSPackageUser: Mappable {
     
     public var id: String!
-    public var name: String!
-    public var phoneNumber: String!
+    public var name: String?
+    public var phoneNumber: String?
     public var email: String?
     public var courierCompanies: [PSCourierCompany] = []
     public var mainTerminal: PSTerminal?
