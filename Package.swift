@@ -9,7 +9,11 @@ let package = Package(
         .library(name: "PayseraParcelSDK", targets: ["PayseraParcelSDK"]),
     ],
     dependencies: [
-        .package(name: "PayseraCommonSDK", url: "https://github.com/paysera/swift-lib-common-sdk", from: "4.1.0")
+        .package(
+            name: "PayseraCommonSDK",
+            url: "https://github.com/paysera/swift-lib-common-sdk",
+            .branch("xcode13")
+        )
     ],
     targets: [
         .target(
