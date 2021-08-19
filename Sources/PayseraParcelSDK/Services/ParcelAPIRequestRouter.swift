@@ -54,6 +54,7 @@ enum ParcelAPIRequestRouter {
     case updatePackage(id: String, payload: PSPackagePayload)
     case unlockPackage(id: String)
     case returnPackage(id: String)
+    case cancelPackage(id: String)
 }
 
 private extension ParcelAPIRequestRouter {
@@ -101,6 +102,8 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .put, path: "packages/\(id)/unlock")
         case .returnPackage(let id):
             return RequestRoute(method: .put, path: "packages/\(id)/return")
+        case .cancelPackage(let id):
+            return RequestRoute(method: .put, path: "/packages/\(id)/cancel")
         
         // MARK: POST
         case .registerPackage(let payload):

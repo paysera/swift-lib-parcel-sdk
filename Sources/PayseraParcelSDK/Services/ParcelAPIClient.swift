@@ -98,4 +98,8 @@ public class ParcelAPIClient: PSBaseApiClient {
     public func returnPackage(id: String) -> Promise<PSPackage> {
         doRequest(requestRouter: ParcelAPIRequestRouter.returnPackage(id: id))
     }
+    
+    public func cancelPackage(id: String) -> Promise<PSPackage> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.cancelPackage(id: id))
+    }
 }
