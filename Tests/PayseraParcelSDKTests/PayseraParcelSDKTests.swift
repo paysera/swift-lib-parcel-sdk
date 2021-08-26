@@ -75,13 +75,6 @@ final class PayseraParcelSDKTests: XCTestCase {
             description: "Package statuses must exist"
         )
     }
-
-    func testGetCellSizes() {
-        executeNonNil(
-            parcelAPIClient.getCellSizes(),
-            description: "Cell sizes must exist"
-        )
-    }
     
     func testGetPrice() {
         let filter = PSPackagePriceFilter()
@@ -162,6 +155,14 @@ final class PayseraParcelSDKTests: XCTestCase {
         executeNonNil(
             parcelAPIClient.cancelPackage(id: id),
             description: "Package must be canceled"
+        )
+    }
+    
+    func testCancelPreviousAction() {
+        let id = "insert_me"
+        executeNonNil(
+            parcelAPIClient.cancelPreviousAction(packageID: id),
+            description: "Previous action must be canceled"
         )
     }
 }

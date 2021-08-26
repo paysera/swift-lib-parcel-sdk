@@ -19,6 +19,7 @@ public class ParcelAPIClient: PSBaseApiClient {
     ) -> Promise<PSMetadataAwareResponse<PSTerminalCell>> {
         doRequest(requestRouter: ParcelAPIRequestRouter.getTerminalCells(id: id, filter: filter))
     }
+    
     public func getTerminalSizesCount(
         id: String,
         filter: PSBaseCompanyFilter? = nil
@@ -45,12 +46,6 @@ public class ParcelAPIClient: PSBaseApiClient {
         doRequest(
             requestRouter: ParcelAPIRequestRouter.getPackageStatusChanges(id: id, filter: filter)
         )
-    }
-    
-    public func getCellSizes(
-        filter: PSBaseFilter? = nil
-    ) -> Promise<PSMetadataAwareResponse<PSSize>> {
-        doRequest(requestRouter: ParcelAPIRequestRouter.getCellSizes(filter: filter))
     }
     
     public func getPrice(payload: PSPackagePriceFilter) -> Promise<PSMoney> {
@@ -101,5 +96,9 @@ public class ParcelAPIClient: PSBaseApiClient {
     
     public func cancelPackage(id: String) -> Promise<PSPackage> {
         doRequest(requestRouter: ParcelAPIRequestRouter.cancelPackage(id: id))
+    }
+    
+    public func cancelPreviousAction(packageID: String) -> Promise<Void> {
+        doRequest(requestRouter: ParcelAPIRequestRouter.cancelPreviousAction(packageID: packageID))
     }
 }
