@@ -10,7 +10,7 @@ public final class PSPackagePayload: Mappable {
     public var receiverLanguage: String?
     public var sourceTerminalID: String?
     public var destinationTerminalID: String?
-    public var size: String?
+    public var cellSizeID: String?
     public var cellID: String?
     public var externalID: String?
     public var sendNotifications: Bool?
@@ -30,7 +30,7 @@ public final class PSPackagePayload: Mappable {
         receiverLanguage        <- map["receiver_language"]
         sourceTerminalID        <- map["source_terminal_id"]
         destinationTerminalID   <- map["destination_terminal_id"]
-        size                    <- map["size"]
+        cellSizeID              <- map["cell_size_id"]
         cellID                  <- map["cell_id"]
         externalID              <- map["external_id"]
         sendNotifications       <- map["send_notifications"]

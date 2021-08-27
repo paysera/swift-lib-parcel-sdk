@@ -40,7 +40,6 @@ enum ParcelAPIRequestRouter {
     case getPackages(filter: PSPackageFilter?)
     case getPackage(id: String)
     case getPackageStatusChanges(id: String, filter: PSBaseFilter?)
-    case getCellSizes(filter: PSBaseFilter?)
     case getPrice(payload: PSPackagePriceFilter)
     case getCountries(filter: PSBaseFilter?)
     case getCities(countryCode: String, filter: PSBaseFilter?)
@@ -55,6 +54,7 @@ enum ParcelAPIRequestRouter {
     case unlockPackage(id: String)
     case returnPackage(id: String)
     case cancelPackage(id: String)
+    case cancelPreviousAction(packageID: String)
 }
 
 private extension ParcelAPIRequestRouter {
@@ -76,8 +76,6 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .get, path: "packages/\(id)")
         case .getPackageStatusChanges(let id, let filter):
             return RequestRoute(method: .get, path: "packages/\(id)/events", payload: filter)
-        case .getCellSizes(let filter):
-            return RequestRoute(method: .get, path: "cell-sizes", payload: filter)
         case .getPrice(let payload):
             return RequestRoute(method: .get, path: "price", payload: payload)
         case .getCountries(let filter):
@@ -104,6 +102,8 @@ private extension ParcelAPIRequestRouter {
             return RequestRoute(method: .put, path: "packages/\(id)/return")
         case .cancelPackage(let id):
             return RequestRoute(method: .put, path: "/packages/\(id)/cancel")
+        case .cancelPreviousAction(let packageID):
+            return RequestRoute(method: .put, path: "/packages/\(packageID)/cancel-action")
         
         // MARK: POST
         case .registerPackage(let payload):
