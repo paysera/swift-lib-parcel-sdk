@@ -2,7 +2,7 @@ import ObjectMapper
 
 public final class PSTerminalCell: Mappable {
     public var id: String!
-    public var size: String!
+    public var size: PSCellSize!
     public var number: String!
     
     public init() { }
@@ -11,7 +11,7 @@ public final class PSTerminalCell: Mappable {
     
     public func mapping(map: Map) {
         id          <- map["id"]
-        size        <- map["size"]
+        size        <- map["cell_size_object"]
         number      <- map["number"]
     }
 }

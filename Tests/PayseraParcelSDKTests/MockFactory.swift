@@ -14,7 +14,7 @@ struct MockFactory {
         data.receiverEmail = "receiver@paysera.com"
         data.sourceTerminalID = "insert_me"
         data.destinationTerminalID = "insert_me"
-        data.size = "insert_me"
+        data.cellSizeID = "insert_me"
         data.payOnReceive = false
         return data
     }

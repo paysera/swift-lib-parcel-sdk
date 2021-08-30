@@ -51,7 +51,8 @@ final class PayseraParcelSDKTests: XCTestCase {
     
     func testGetPackages() {
         let filter = PSPackageFilter()
-        filter.statuses = [.pending]
+        filter.statuses = [.outdated, .returnRequested]
+        filter.courierCompanyID = "insert_me"
         
         executeNonNil(
             parcelAPIClient.getPackages(filter: filter),
@@ -72,13 +73,6 @@ final class PayseraParcelSDKTests: XCTestCase {
         executeNonNil(
             parcelAPIClient.getPackageStatusChanges(id: id),
             description: "Package statuses must exist"
-        )
-    }
-
-    func testGetCellSizes() {
-        executeNonNil(
-            parcelAPIClient.getCellSizes(),
-            description: "Cell sizes must exist"
         )
     }
     
@@ -153,6 +147,22 @@ final class PayseraParcelSDKTests: XCTestCase {
         executeNonNil(
             parcelAPIClient.returnPackage(id: id),
             description: "Package return must be requested"
+        )
+    }
+    
+    func testCancelPackage() {
+        let id = "insert_me"
+        executeNonNil(
+            parcelAPIClient.cancelPackage(id: id),
+            description: "Package must be canceled"
+        )
+    }
+    
+    func testCancelPreviousAction() {
+        let id = "insert_me"
+        executeNonNil(
+            parcelAPIClient.cancelPreviousAction(packageID: id),
+            description: "Previous action must be canceled"
         )
     }
 }

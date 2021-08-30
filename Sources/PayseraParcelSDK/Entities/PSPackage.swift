@@ -15,7 +15,7 @@ public final class PSPackage: Mappable {
     public var receiverLanguage: String?
     public var sourceTerminal: PSTerminal?
     public var destinationTerminal: PSTerminal?
-    public var size: String?
+    public var cellSize: PSCellSize?
     public var cell: PSCell?
     public var price: PSMoney?
     public var payment: PSPackagePayment?
@@ -43,7 +43,7 @@ public final class PSPackage: Mappable {
         receiverLanguage        <- map["receiver_language"]
         sourceTerminal          <- map["source_terminal"]
         destinationTerminal     <- map["destination_terminal"]
-        size                    <- map["size"]
+        cellSize                <- map["cell_size_object"]
         cell                    <- map["cell"]
         price                   <- map["price"]
         payment                 <- map["payment"]
