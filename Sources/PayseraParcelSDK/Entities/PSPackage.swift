@@ -10,8 +10,8 @@ public final class PSPackage: Mappable {
     public var senderPhone: String!
     public var senderEmail: String!
     public var receiverName: String!
-    public var receiverPhone: String!
-    public var receiverEmail: String!
+    public var receiverPhone: String?
+    public var receiverEmail: String?
     public var receiverLanguage: String?
     public var sourceTerminal: PSTerminal?
     public var destinationTerminal: PSTerminal?
