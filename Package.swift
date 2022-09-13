@@ -12,7 +12,7 @@ let package = Package(
         .package(
             name: "PayseraCommonSDK",
             url: "https://github.com/paysera/swift-lib-common-sdk",
-            .exact("4.2.1")
+            .exact("4.2.2")
         )
     ],
     targets: [
