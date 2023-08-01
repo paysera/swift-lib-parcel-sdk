@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version: 5.7
 
 import PackageDescription
 
@@ -10,17 +10,20 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            name: "PayseraCommonSDK",
             url: "https://github.com/paysera/swift-lib-common-sdk",
-            .exact("4.2.3")
+            from: "4.3.0"
         )
     ],
     targets: [
         .target(
             name: "PayseraParcelSDK",
-            dependencies: ["PayseraCommonSDK"]),
+            dependencies: [
+                .product(name: "PayseraCommonSDK", package: "swift-lib-common-sdk")
+            ]
+        ),
         .testTarget(
             name: "PayseraParcelSDKTests",
-            dependencies: ["PayseraParcelSDK"]),
+            dependencies: ["PayseraParcelSDK"]
+        ),
     ]
 )
